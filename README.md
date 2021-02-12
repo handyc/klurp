@@ -1,4 +1,4 @@
- 322 days
+ 322 days until Klurp v. 1.0
  # klurp
 
 ## a text engine for anything
