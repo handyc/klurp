@@ -1,4 +1,4 @@
- 316 days until Klurp v. 1.0 New Year's release party
+ 316 edays until Klurp v. 1.0 New Year's release party
  # klurp
 
 ## a text engine for anything
