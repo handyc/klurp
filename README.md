@@ -15,4 +15,4 @@
 
 ![i](https://openphilology.eu/media/pages/news/524279882-1558970201/newsdatech2019.05.png)
 
-``   Febru``
+``   February 2021  ``
