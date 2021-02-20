@@ -1,22 +1,3 @@
-  GNU nano 5.3                                                          klurpt.txt
-# klurp
-
-## a text engine for anything
-
-***
-
-***
-
-### documentation in progress
-
-#
-# 1. Introduction
-#
-
-![i](https://openphilology.eu/media/pages/news/524279882-1558970201/newsdatech2019.05.png)
-
-
-
  314 days until Klurp v. 1.0 New Year's release party
 
 ````
