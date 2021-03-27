@@ -51,7 +51,7 @@ sh.sh('-c', appstring)
 
 #os.chdir("/home/handyc/klurp")
 #os.chdir(correct_klurp_directory_set_at_install")
-os.chdir(basedir)
+os.chdir(basepath)
 copystring = 'cp samplefiles/project/*.py ' + projectpath
 copystring2 = 'cp samplefiles/engine/* ' + enginepath
 copystring3 = 'cp samplefiles/engine/* ' + enginepath
