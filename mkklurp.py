@@ -39,12 +39,31 @@ projectstring = 'django-admin startproject ' + projectname
 
 sh.sh('-c', projectstring)
 interfacename = "interface"
+enginename = "engine"
+
 os.rename(projectname, interfacename)
 projectpath = os.path.join(venvpath, interfacename)
+enginepath = os.path.join(venvpath, enginename)
 
 os.chdir(projectpath)
 appstring = 'python3 manage.py startapp ' + appname
 sh.sh('-c', appstring)
+
+#os.chdir("/home/handyc/klurp")
+#os.chdir(correct_klurp_directory_set_at_install")
+os.chdir(basedir)
+copystring = 'cp samplefiles/project/*.py ' + projectpath
+copystring2 = 'cp samplefiles/engine/* ' + enginepath
+copystring3 = 'cp samplefiles/engine/* ' + enginepath
+sh.sh('-c', copystring)
+sh.sh('-c', copystring2)
+sh.sh('-c', copystring3)
+print(copystring)
+print(copystring2)
+print(copystring3)
+
+
+#
 
 # copy the template files
 
@@ -57,3 +76,7 @@ sh.sh('-c', appstring)
 # print ('thanks for using klurp')
 # print ('exited at: 00 00 00 on 00 00 00 0000 at location 00,00,00')
 # coords
+
+#cp ~/scripts/samplefiles/project/*.py $projectpath
+#cp ~/scripts/samplefiles/engine/* $enginepath
+#cp -r ~/scripts/samplefiles/engine/* $enginepath
