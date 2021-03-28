@@ -44,9 +44,16 @@ projectstring = 'django-admin startproject ' + projectname
 sh.sh('-c', projectstring)
 interfacename = "interface"
 enginename = "engine"
+projectname = "demoproject"
+appname = "demoapp"
 
 os.rename(projectname, interfacename)
 projectpath = os.path.join(venvpath, interfacename)
+demoapppath = os.path.join(projectpath, appname)
+#app2path = os.path.join(venvpath, app2name)
+#app3path = os.path.join(venvpath, app3name)
+#app4path = os.path.join(venvpath, app4name)
+
 enginepath = os.path.join(venvpath, enginename)
 
 os.chdir(projectpath)
