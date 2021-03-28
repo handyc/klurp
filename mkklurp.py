@@ -52,6 +52,7 @@ os.rename(projectname, interfacename)
 projectpath = os.path.join(venvpath, interfacename)
 projectfilespath = os.path.join(projectpath, projectname)
 demoapppath = os.path.join(projectpath, appname)
+templatespath = os.path.join(projectpath, templatesname)
 #app2path = os.path.join(venvpath, app2name)
 #app3path = os.path.join(venvpath, app3name)
 #app4path = os.path.join(venvpath, app4name)
@@ -71,18 +72,18 @@ copystring1 = 'cp -r samplefiles/demoapp/*.py ' + demoapppath
 #copystring2 = 'cp -r samplefiles/project/*.py ' + projectpath
 copystring2 = 'cp -r samplefiles/project/*.py ' + projectfilespath
 copystring3 = 'cp -r samplefiles/engine/* ' + enginepath
-#copystring4 = 'cp -r samplefiles/templates/* ' + templatepath
+copystring4 = 'cp -r samplefiles/templates/* ' + templatespath
 #copystring5 = 'cp -r samplefiles/users/* ' + userpath
 
 sh.sh('-c', copystring1)
 sh.sh('-c', copystring2)
 sh.sh('-c', copystring3)
-#sh.sh('-c', copystring4)
+sh.sh('-c', copystring4)
 #sh.sh('-c', copystring5)
 print(copystring1)
 print(copystring2)
 print(copystring3)
-#print(copystring4)
+print(copystring4)
 #print(copystring5)
 
 
