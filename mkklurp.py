@@ -53,6 +53,7 @@ sh.sh('-c', appstring)
 
 #os.chdir("/home/handyc/klurp")
 #os.chdir(correct_klurp_directory_set_at_install")
+klurp = "klurp"
 klurppath = os.path.join(homedir, klurp)
 os.chdir(klurppath)
 copystring = 'cp samplefiles/project/*.py ' + projectpath
