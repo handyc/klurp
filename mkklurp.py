@@ -68,7 +68,7 @@ sh.sh('-c', appstring)
 #klurppath = os.path.join(homedir, klurp)
 os.chdir(klurpdir)
 copystring1 = 'cp -r samplefiles/demoapp/*.py ' + demoapppath
-copystring2 = 'cp -r samplefiles/project/*.py ' + projectfilepath
+copystring2 = 'cp -r samplefiles/project/*.py ' + projectfilespath
 copystring3 = 'cp -r samplefiles/engine/* ' + enginepath
 #copystring4 = 'cp -r samplefiles/templates/* ' + templatepath
 #copystring5 = 'cp -r samplefiles/users/* ' + userpath
