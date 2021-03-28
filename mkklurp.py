@@ -47,6 +47,7 @@ interfacename = "interface"
 enginename = "engine"
 projectname = "demoproject"
 appname = "demoapp"
+templatesname = "demoapp"
 
 os.rename(projectname, interfacename)
 projectpath = os.path.join(venvpath, interfacename)
