@@ -18,6 +18,7 @@ from .models import Dictionary
 from .models import DictionaryEntry
 
 index_template="demoapp/index.html"
+about_template="demoapp/about.html"
 #home_template="demoapp/index.html"
 bibliography_template="demoapp/bibliography.html"
 members_template="demoapp/members.html"
@@ -31,6 +32,11 @@ commandpath="../engine/dictchk.py"
 
 def index(request):
     template = index_template
+
+    return render(request,template,{})
+
+def about(request):
+    template = about_template
 
     return render(request,template,{})
 
