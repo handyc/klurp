@@ -5,7 +5,9 @@ import subprocess
 
 homedir=os.getenv("HOME")
 
-realpath = os.path.realpath(path)
+#realpath = os.path.realpath(path)
+klurpdir=os.path.dirname(os.path.abspath(__file__)))
+)
 basepath = os.getcwd()
 venvname = "demovenv"
 projectname = "demoproject"
@@ -54,9 +56,9 @@ sh.sh('-c', appstring)
 
 #os.chdir("/home/handyc/klurp")
 #os.chdir(correct_klurp_directory_set_at_install")
-klurp = "klurp"
-klurppath = os.path.join(homedir, klurp)
-os.chdir(realpath)
+#klurp = "klurp"
+#klurppath = os.path.join(homedir, klurp)
+os.chdir(klurpdir)
 copystring = 'cp samplefiles/project/*.py ' + projectpath
 copystring2 = 'cp samplefiles/engine/* ' + enginepath
 copystring3 = 'cp samplefiles/engine/* ' + enginepath
