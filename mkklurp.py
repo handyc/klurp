@@ -3,6 +3,8 @@
 import sys, os, sh
 import subprocess
 
+homedir=os.getenv("HOME")
+
 basepath = os.getcwd()
 venvname = "demovenv"
 projectname = "demoproject"
@@ -51,7 +53,8 @@ sh.sh('-c', appstring)
 
 #os.chdir("/home/handyc/klurp")
 #os.chdir(correct_klurp_directory_set_at_install")
-os.chdir(basepath)
+klurppath = os.path.join(homedir, klurp)
+os.chdir(klurppath)
 copystring = 'cp samplefiles/project/*.py ' + projectpath
 copystring2 = 'cp samplefiles/engine/* ' + enginepath
 copystring3 = 'cp samplefiles/engine/* ' + enginepath
