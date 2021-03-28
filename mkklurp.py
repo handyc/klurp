@@ -6,7 +6,8 @@ import subprocess
 homedir=os.getenv("HOME")
 
 #realpath = os.path.realpath(path)
-klurpdir=os.path.dirname(os.path.abspath(__file__))
+#klurpdir=os.path.dirname(os.path.abspath(__file__))
+klurpdir=os.path.dirname(os.path.realpath(__file__))
 basepath = os.getcwd()
 venvname = "demovenv"
 projectname = "demoproject"
