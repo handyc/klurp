@@ -1,16 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
-<form action="{% url 'search' %}" method="POST" content='text/html; charset=UTF-8' accept-charset="UTF-8">{% csrf_token %}
-  {{ form.as_table }}
-  <input type="text" id="term1" name="term1" size="40" value="">
-  <p><button type="submit">Search</button>
-</form>
 
-{% if matches %}
-{% for match in matches %}
-match: {{ match.term1 }} is defined as {{ match.term2 }}
-{% endfor %}
-{% endif %}
+<a href="/">index</a>
+<a href="/about">about</a>
+<a href="/bibliography">bibliography</a>
+<a href="/members">members</a>
+<a href="/news">news</a>
+<a href="/resources">resources</a>
+<a href="/search">search</a>
+
+about
 
 {% endblock %}
 
