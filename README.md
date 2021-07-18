@@ -30,7 +30,7 @@
 
 
 
- 167 days until Klurp v. 1.0 New Year's release party
+ 166 days until Klurp v. 1.0 New Year's release party
 
 ````
                             2021
