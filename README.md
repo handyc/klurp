@@ -22,6 +22,8 @@
 
 ### documentation in progress
 
+<input type="text" id="name" name="name"/>
+
 #
 # 1. Introduction
 #
