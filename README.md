@@ -26,6 +26,13 @@
 # 1. Introduction
 #
 
+Klurp is primarily a text alignment system that employs a simple genetic algorithm to find
+semantic matches between arbitrary texts. It was initially created in order to align
+classical Chinese and Tibetan translations of Buddhist texts originally composed in Sanskrit,
+for the ERC Open Philology project. The system is language agnostic in the sense that it will
+work on texts in any languages, so long as multi-lingual dictionaries are available for it to
+utilize.
+
 ![i](https://openphilology.eu/media/pages/news/524279882-1558970201/newsdatech2019.05.png)
 
 
