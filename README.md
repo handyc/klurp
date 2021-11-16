@@ -33,6 +33,17 @@ for the ERC Open Philology project. The system is language agnostic in the sense
 work on texts in any languages, so long as multi-lingual dictionaries are available for it to
 utilize.
 
+The main engine is contained in the 'engine' folder in this repository.
+It is meant to be called by the klurp.py wrapper program, which parses user input.
+The engine can also be called directly in special instances where the wrapper is not desired.
+
+The samplefiles folder and mkklurp program create a Django project meant to interact with
+the klurp engine and the data it produces, so that complete interactive web portals can be
+created from these data very quickly.
+
+Klurp is still in a beta testing phase. More documentation will be added here over the
+coming months.
+
 ![i](https://openphilology.eu/media/pages/news/524279882-1558970201/newsdatech2019.05.png)
 
 
