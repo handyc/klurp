@@ -154,7 +154,7 @@ We very much hope that you can join this live event in the Digital Lab in P.J. V
 #
 
 
- 29 days until Klurp v. 1.0 New Year's release party
+ 17 days until Klurp v. 1.0 New Year's release party
 
 ````
    December 2021      
