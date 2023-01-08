@@ -61,7 +61,7 @@ Buddhist texts.
 
 course week by week
 + Week 1
-    + https://dhlinguistics.com/
+    + https://dhtools.org
     + ssh
 + Week 2
     + bash
