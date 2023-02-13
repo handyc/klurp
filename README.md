@@ -86,15 +86,15 @@ adding tests for many other character sets.
 
 
 <details><summary>color test</summary>
-$\fcolorbox{yellow}{lime} {96. yā puna bhikṣuṇī } \color{red} {ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
+$\fcolorbox{yellow}{lime} {96. yā puna bhikṣuṇī } \colorbox{white}{red} {ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
   
-$\fcolorbox{yellow}{lime} {96. 若比丘尼。} \color{red} {與減二十雨童女。受具足者波夜提。}$  
+$\fcolorbox{yellow}{lime} {96. 若比丘尼。} \colorbox{white}{red} {與減二十雨童女。受具足者波夜提。}$  
 
-$\fcolorbox{yellow}{lime} {104. 若比丘尼。} \color{red} {與未滿十二歲已嫁女受具足戒。波逸提。}$  
+$\fcolorbox{yellow}{lime} {104. 若比丘尼。} \colorbox{white}{red} {與未滿十二歲已嫁女受具足戒。波逸提。}$  
 
-$\fcolorbox{yellow}{lime} {108. 若比丘尼。} \color{red} {畜未滿十二歲已嫁女為眾。波夜提。}$  
+$\fcolorbox{yellow}{lime} {108. 若比丘尼。} \colorbox{white}{red} {畜未滿十二歲已嫁女為眾。波夜提。}$  
 
-$\fcolorbox{yellow}{lime} {108 . 若復苾芻尼知} \color{red} {曾嫁女人年未滿十二。與出家者。波逸底迦。}$  
+$\fcolorbox{yellow}{lime} {108 . 若復苾芻尼知} \colorbox{white}{red} {曾嫁女人年未滿十二。與出家者。波逸底迦。}$  
 </details>
   
 <details><summary>web interface</summary>
