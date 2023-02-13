@@ -26,12 +26,12 @@ The main engine for Klurp is contained in the 'engine' folder in this repository
 The samplefiles folder and mkklurp program create a Django project meant to interact with the klurp engine and the data it produces, so that complete interactive web portals can be created from these data very quickly.
 
 Klurp is undergoing major changes right now as we continue to process new materials in Chinese, Tibetan and Sanskrit.
-- Additional languages are being added.
+- Additional [languages](https://en.wikipedia.org/wiki/ISO_639-3) are being added.
 - Additional dictionaries are being added.
 - Documentation is being improved.
 - new engine tests
 - new tutorials
-- article on proof of concept
+- article on proof of concept coming soon
 
 A new release for Klurp is planned for April 2023.
 
