@@ -87,7 +87,7 @@ adding tests for many other character sets.
 
 <details><summary>color test</summary>
 $\fcolorbox{yellow}{lime} {96. yā puna bhikṣuṇī } \colorbox{white}{red} {ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
-$\colorbox{lime}{96. yā puna bhikṣuṇī } \color{red}{ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
+$\color{lime}{96. yā puna bhikṣuṇī } \color{red}{ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
   
 $\fcolorbox{yellow}{lime} {"96. 若比丘尼。"} \colorbox{white}{red} {與減二十雨童女。受具足者波夜提。}$  
 
