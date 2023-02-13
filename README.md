@@ -81,10 +81,16 @@ adding tests for many other character sets.
 + Sample alignment [sutta](https://suttacentral.net/mn12)
 + Sample alignment sutra
 + Sample alignment abhidharma
-+ color test $$\color{lime} \fcolorbox{white}{red} {Lime on Red} $$
   
 </details>
 
+
+<details><summary>color test</summary>
+$$\color{lime} \fcolorbox{white}{red} {Lime on Red} $$
+$$\color{lime} \fcolorbox{white}{red} {Lime on Red} $$
+$$\color{lime} \fcolorbox{white}{red} {Lime on Red} $$
+</details>
+  
 <details><summary>web interface</summary>
 
 Klurp uses the Django web framework to create simple app interfaces easily.
