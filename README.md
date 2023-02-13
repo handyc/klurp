@@ -81,6 +81,7 @@ adding tests for many other character sets.
 + Sample alignment [sutta](https://suttacentral.net/mn12)
 + Sample alignment sutra
 + Sample alignment abhidharma
++ color test $$\color{lime} \fcolorbox{white}{red} {Lime on Red} $$
   
 </details>
 
