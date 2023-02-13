@@ -211,9 +211,13 @@ course week by week
       -
       
 # additional features
+    + automatic n-grams statistics
     + automatic dictionary creation
-    + basic django app from template
-    + automatic adjustment to available processors
+    + automatic alignment from current information
+    + continuously updated alignments
+    + user input through simple web interface
+    + basic custom django app for unique data from template
+    + engine automatically adjusts to available processors
     + step based system preserves data across generations automatically, easy to archive
     + easy to extend with custom code
       
