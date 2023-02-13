@@ -71,8 +71,8 @@ adding tests for many other character sets.
     +  ``’di skad bdag gis thos pa dus gcig na | bcom ldan ’das mnyan yod na rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga' ra ba na bzhugs te |``  
     + ``如是我聞。一時佛在舍衛國祇樹給孤獨園。``  
 
-+ Sample alignment from <details><summary>lokottaravāda prātimokṣa</summary>[lokottaravāda prātimokṣa](https://sites.google.com/site/sikkhamana/overview)</details>
-+ Sample alignment from <details><summary>mahāsāṅghika prātimokṣa</summary>[mahāsāṅghika prātimokṣa<](https://sites.google.com/site/bhikkhunipatimokkha/mahasanghika:8rulesonsikkhamana2yearstra)</details>
++ Sample alignments from <details><summary>vinaya texts</summary>[lokottaravāda prātimokṣa](https://sites.google.com/site/sikkhamana/overview)  
+  [mahāsāṅghika prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/mahasanghika:8rulesonsikkhamana2yearstra)</details>
   
  
   
