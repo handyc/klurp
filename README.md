@@ -18,7 +18,7 @@
 # 1. Introduction
 #
 
-Klurp is primarily a text alignment system that employs a simple genetic algorithm to find semantic matches between arbitrary texts. It was initially created in order to align classical Chinese and Tibetan translations of Buddhist texts originally composed in Sanskrit, for the ERC Open Philology project. The system is language agnostic in the sense that it will work on texts in any languages, so long as multi-lingual dictionaries are available for it to utilize.
+Klurp is primarily a text alignment system that employs a simple genetic algorithm to find semantic matches between arbitrary texts. It was initially created in order to align classical Chinese and Tibetan translations of Buddhist texts originally composed in Sanskrit, for the ERC [Open Philology](https://cordis.europa.eu/project/id/741884) project. The system is language agnostic in the sense that it will work on texts in any languages, so long as multi-lingual dictionaries are available for it to utilize.
 
 The main engine is contained in the 'engine' folder in this repository. It is meant to be called by the klurp.py wrapper program, which parses user input. The engine can also be called directly in special instances where the wrapper is not desired.
 
