@@ -18,13 +18,15 @@
 # 1. Introduction
 #
 
-Klurp is primarily a text alignment system that employs a simple genetic algorithm to find semantic matches between arbitrary texts. It was initially created in order to align classical Chinese and Tibetan translations of Buddhist texts originally composed in Sanskrit, for the ERC [Open Philology](https://cordis.europa.eu/project/id/741884) project. The system is language agnostic in the sense that it will work on texts in any languages, so long as multi-lingual dictionaries are available for it to utilize.
+Klurp is primarily a text alignment system that employs a simple genetic algorithm to find semantic matches between arbitrary texts. It was initially created in order to align classical Chinese and Tibetan translations of Buddhist texts originally composed in Sanskrit, for the ERC [Open Philology](https://cordis.europa.eu/project/id/741884) project. With additional feedback from scholars in other areas of language research, this system was then extended for use with a wide variety of applications across any language pairs. It uses multi-lingual dictionaries to compare similarities of strings, or when these are unavailable it creates
+dictionaries from previously seen source materials.
 
-The main engine is contained in the 'engine' folder in this repository. It is meant to be called by the klurp.py wrapper program, which parses user input. The engine can also be called directly in special instances where the wrapper is not desired.
+The main engine for Klurp is contained in the 'engine' folder in this repository. It is meant to be called by the klurp.py wrapper program, which parses user input. The engine can also be called directly in special instances where the wrapper is not desired.
 
 The samplefiles folder and mkklurp program create a Django project meant to interact with the klurp engine and the data it produces, so that complete interactive web portals can be created from these data very quickly.
 
 Klurp is undergoing major changes right now as we continue to process new materials in Chinese, Tibetan and Sanskrit.
+
 A new release for Klurp is planned for April 2023.
 
 ``    February 2023               March 2023                   April 2023         ``  
@@ -37,7 +39,6 @@ A new release for Klurp is planned for April 2023.
 ``                                                          30                    ``  
                                                         
 ![i](https://openphilology.eu/media/pages/news/524279882-1558970201/newsdatech2019.05.png)
-
 
 <details><summary>History</summary>
 
