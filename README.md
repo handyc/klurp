@@ -37,7 +37,7 @@ A new release for Klurp is planned for April 2023.
 
 <details><summary>History</summary>
 
-Klurp began as the successor to my simple n-grams extraction program, aks.
+Klurp began as the successor to my simple n-grams extraction program, ![aks](https://github.com/handyc/aks).
 That program was lacking a user interface as well as other features that
 became desirable as I continued to explore patterns in texts.
 
@@ -60,12 +60,14 @@ Buddhist texts.
 <details>
 <summary>Text Alignment</summary>
 
-+ Sample alignment from Gaṅgottaraparipṛcchā:
++ Sample alignment from [Gaṅgottaraparipṛcchā](https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&vid=1179&view=fulltext):
     +  ``’di skad bdag gis thos pa dus gcig na | bcom ldan ’das mnyan yod na rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga' ra ba na bzhugs te |``  
     + ``如是我聞。一時佛在舍衛國祇樹給孤獨園。``  
 
-+ Sample alignment 2
-
++ Sample alignment vinaya
++ Sample alignment sutra
++ Sample alignment abhidharma
+  
 </details>
 
 <details><summary>DH Course</summary>
