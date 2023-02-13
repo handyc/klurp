@@ -128,6 +128,8 @@ $\color{lime} {108 . 若復苾芻尼知}$
 Klurp uses the Django web framework to create simple app interfaces easily.
 Klurp includes various scripts to automate the creation of these apps.
 
+Link to Klurp demo page [coming soon](https://github.com)
+
 </details>
 
 <details><summary>DH Course</summary>
