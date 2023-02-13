@@ -52,8 +52,9 @@ Buddhist texts.
 <summary>Text Alignment</summary>
 
 + Text Alignment
-    + example 1
-    + example 2
+    +  ``’di skad bdag gis thos pa dus gcig na | bcom ldan ’das mnyan yod na rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga' ra ba na bzhugs te |``  
+    + ``如是我聞。一時佛在舍衛國祇樹給孤獨園。``  
+
 + Text Alignment 2
 
 </details>
