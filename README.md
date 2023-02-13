@@ -20,7 +20,7 @@ The main engine is contained in the 'engine' folder in this repository. It is me
 
 The samplefiles folder and mkklurp program create a Django project meant to interact with the klurp engine and the data it produces, so that complete interactive web portals can be created from these data very quickly.
 
-Klurp is undergoing maor changes right now as we continue to process new materials in Chinese, Tibetan and Sanskrit.
+Klurp is undergoing major changes right now as we continue to process new materials in Chinese, Tibetan and Sanskrit.
 A new release for Klurp is planned for April 2023.
 
 ![i](https://openphilology.eu/media/pages/news/524279882-1558970201/newsdatech2019.05.png)
