@@ -200,6 +200,13 @@ course week by week
       -
       -
       
+# additional features
+    + automatic dictionary creation
+    + basic django app from template
+    + automatic adjustment to available processors
+    + step based system preserves data across generations automatically, easy to archive
+    + easy to extend with custom code
+      
 # Recent Events:
 ### 5 Nov 2021
 <details><summary>Full Stack Language Apps from the Bottom Up: Custom Online Portals for Humanities Research Using Linux, Python, Django & other Open Source Tools
