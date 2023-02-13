@@ -95,6 +95,9 @@ $\fcolorbox{yellow}{lime} {104. 若比丘尼。} \colorbox{white}{red} {與未�
 $\fcolorbox{yellow}{lime} {108. 若比丘尼。} \colorbox{white}{red} {畜未滿十二歲已嫁女為眾。波夜提。}$  
 
 $\fcolorbox{yellow}{lime} {108 . 若復苾芻尼知} \colorbox{white}{red} {曾嫁女人年未滿十二。與出家者。波逸底迦。}$  
+
+$\mathscr{\color{red}{this} \ \ \color{blue}{is \ \ a \ \ paragraph} \ \ \color{yellow}{in \ \ another \ \ font}}$
+
 </details>
   
 <details><summary>web interface</summary>
