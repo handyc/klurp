@@ -26,6 +26,12 @@ The main engine for Klurp is contained in the 'engine' folder in this repository
 The samplefiles folder and mkklurp program create a Django project meant to interact with the klurp engine and the data it produces, so that complete interactive web portals can be created from these data very quickly.
 
 Klurp is undergoing major changes right now as we continue to process new materials in Chinese, Tibetan and Sanskrit.
+- Additional languages are being added.
+- Additional dictionaries are being added.
+- Documentation is being improved.
+- new engine tests
+- new tutorials
+- article on proof of concept
 
 A new release for Klurp is planned for April 2023.
 
@@ -101,6 +107,20 @@ $\mathscr{\color{red}{yā puna bhikṣuṇī} \ \ \color{blue}{ūna-viṁśati-v
 $\color{red}{yā puna bhikṣuṇī} \ \ \color{blue}{ūna-viṁśati-varṣāṁ } \ \ \color{yellow}{kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
   
 $\mathscr{\color{red}{this} \ \ \color{blue}{is \ \ a \ \ paragraph} \ \ \color{yellow}{in \ \ another \ \ font}}$
+
+</details>
+
+<details><summary>n-grams test</summary>
+$\fcolorbox{yellow}{lime} {96. yā puna bhikṣuṇī } \colorbox{white}{red} {ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
+$\color{lime}{96. yā puna bhikṣuṇī }$  
+  
+$\color{lime} {96. 若比丘尼。}$  
+
+$\color{lime} {104. 若比丘尼。}$  
+
+$\color{lime} {108. 若比丘尼。}$  
+
+$\color{lime} {108 . 若復苾芻尼知}$  
 
 </details>
   
