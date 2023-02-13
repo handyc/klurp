@@ -71,11 +71,11 @@ adding tests for many other character sets.
     +  ``’di skad bdag gis thos pa dus gcig na | bcom ldan ’das mnyan yod na rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga' ra ba na bzhugs te |``  
     + ``如是我聞。一時佛在舍衛國祇樹給孤獨園。``  
 
-+ Sample alignments from [vinaya texts](https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&vid=1179&view=fulltext):
-    +  <details><summary>vinaya eg 1</summary>[lokottaravāda prātimokṣa](https://sites.google.com/site/sikkhamana/overview</details>  
-    +  <details><summary>vinaya eg 2</summary>[mahāsāṅghika prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/mahasanghika:8rulesonsikkhamana2yearstra</details>
-    +  <details><summary>vinaya eg 3</summary>[lokottaravāda prātimokṣa](https://sites.google.com/site/sikkhamana/overview</details>  
-    +  <details><summary>vinaya eg 4</summary>[mahāsāṅghika prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/mahasanghika:8rulesonsikkhamana2yearstra</details>
++ Sample alignments from [vinaya texts](https://sites.google.com/site/sikkhamana/overview):
+    +  <details><summary>vinaya eg 1</summary>[lokottaravāda prātimokṣa](https://sites.google.com/site/sikkhamana/overview)</details>  
+    +  <details><summary>vinaya eg 2</summary>[mahāsāṅghika prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/mahasanghika:8rulesonsikkhamana2yearstra)</details>
+    +  <details><summary>vinaya eg 3</summary>[mahīśāsaka prātimokṣa](https://sites.google.com/site/sikkhamana/overview)</details>  
+    +  <details><summary>vinaya eg 4</summary>[sarvāstivāda prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/mahasanghika:8rulesonsikkhamana2yearstra</details>
    
 + Sample alignment [sutta](https://suttacentral.net/mn12)
 + Sample alignment sutra
