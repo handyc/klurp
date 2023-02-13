@@ -86,39 +86,52 @@ course week by week
     + ssh
 + Week 2
     + bash
-+ Week 3
+    + nano
+    + pico
+    + vim
+    + emacs
+    + grep
+    + sed
+    + awk
++ Week 3: History and Structure of WWW
+    + HTML
+    + CSS
+    + wget and cURL
+    + Lynx and Links
++ Week 4: Forms, PHP and CMS
+    + PHP
+    + Grav
++ Week 5: Python
     + example 1
     + example 2
-+ Week 4
-    + example 1
-    + example 2
-+ Week 5
-    + example 1
-    + example 2
-+ Week 6
-    + example 1
-    + example 2
-+ Week 7
-    + example 1
-    + example 2
-+ Week 8
-    + example 1
-    + example 2
-+ Week 9
-    + example 1
-    + example 2
-+ Week 10
-    + example 1
-    + example 2
-+ Week 11
-    + example 1
-    + example 2
-+ Week 12
-    + example 1
-    + example 2
++ Week 6: Django
+    + models
+    + views
+    + urls
+    + web admin interface  
++ Week 7: Python Libraries
+    + NLTK
+    + spaCy
+    + Pandas
++ Week 8: Advanced Django
+    + templates
+    + forms
+    + management commands
++ Week 9: JavaScript
+    + JavaScript client side interface
++ Week 10: Databases
+    + PostgreSQL
+    + MySQL
++ Week 11: System Administration
+    + sudo
+    + apt
+    + nginx
+    + gunicorn
++ Week 12: Version Control
+    + git
+    + subversion
 + Week 13
-    + example 1
-    + example 2
+    + presenting
 
 
 </details>
@@ -132,9 +145,6 @@ course week by week
       -
       -
       
-    
-
-
 # Recent Events:
 ### 5 Nov 2021
 <details><summary>Full Stack Language Apps from the Bottom Up: Custom Online Portals for Humanities Research Using Linux, Python, Django & other Open Source Tools
