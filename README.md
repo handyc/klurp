@@ -18,7 +18,7 @@
 # 1. Introduction
 #
 
-Klurp is primarily a text alignment system that employs a simple genetic algorithm to find semantic matches between arbitrary texts. It was initially created in order to align classical Chinese and Tibetan translations of Buddhist texts originally composed in Sanskrit, for the ERC [Open Philology](https://cordis.europa.eu/project/id/741884) project. With additional feedback from scholars in other areas of language research, this system was then extended for use with a wide variety of applications across any language pairs. It uses multi-lingual dictionaries to compare similarities of strings, or when these are unavailable it creates
+Klurp is primarily a text alignment system that employs a simple genetic algorithm to find semantic matches between arbitrary texts. It was initially created in order to align classical Chinese and Tibetan translations of Buddhist texts originally composed in Sanskrit, for the ERC ![Open Philology](https://cordis.europa.eu/project/id/741884) project. With additional feedback from scholars in other areas of language research, this system was then extended for use with a wide variety of applications across any language pairs. It uses multi-lingual dictionaries to compare similarities of strings, or when these are unavailable it creates
 dictionaries from previously seen source materials.
 
 The main engine for Klurp is contained in the 'engine' folder in this repository. It is meant to be called by the klurp.py wrapper program, which parses user input. The engine can also be called directly in special instances where the wrapper is not desired.
@@ -71,7 +71,10 @@ adding tests for many other character sets.
     +  ``’di skad bdag gis thos pa dus gcig na | bcom ldan ’das mnyan yod na rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga' ra ba na bzhugs te |``  
     + ``如是我聞。一時佛在舍衛國祇樹給孤獨園。``  
 
-+ Sample alignment <details><summary>vinaya</summary>[vinaya]([https://sites.google.com/site/sikkhamana/overview](https://cordis.europa.eu/project/id/741884)</details>
++ Sample alignment from <details><summary>lokottaravāda prātimokṣa</summary>[lokottaravāda prātimokṣa](https://sites.google.com/site/sikkhamana/overview)</details>
++ Sample alignment from <details><summary>mahāsāṅghika prātimokṣa</summary>[mahāsāṅghika prātimokṣa<](https://sites.google.com/site/bhikkhunipatimokkha/mahasanghika:8rulesonsikkhamana2yearstra)</details>
+  
+ 
   
 + Sample alignment [sutta](https://suttacentral.net/mn12)
 + Sample alignment sutra
