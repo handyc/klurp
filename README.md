@@ -143,7 +143,7 @@ Link to Klurp demo page [coming soon](https://github.com)
 I have received numerous requests for the course materials associated with
 the digital humanities course I created and taught at Leiden University
 from 2018 through 2021. I have started putting these materials online and
-will soon move them to a [separate repository](https://github.com/handyc/dhtools.org/courses) for easier access.
+will soon move them to a [separate repository](https://github.com/handyc/dhtools.org/blob/main/courses/dhtoolkits.txt) for easier access.
 
 course week by week
 + Week 1: The Unix/Linux command line
