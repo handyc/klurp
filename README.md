@@ -66,7 +66,8 @@ adding tests for many other character sets.
     +  ``’di skad bdag gis thos pa dus gcig na | bcom ldan ’das mnyan yod na rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga' ra ba na bzhugs te |``  
     + ``如是我聞。一時佛在舍衛國祇樹給孤獨園。``  
 
-+ Sample alignment vinaya
++ Sample alignment [vinaya](https://sites.google.com/site/sikkhamana/overview)
++ Sample alignment [sutta](https://suttacentral.net/mn12)
 + Sample alignment sutra
 + Sample alignment abhidharma
   
