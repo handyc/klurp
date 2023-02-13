@@ -87,6 +87,7 @@ adding tests for many other character sets.
 
 <details><summary>color test</summary>
 $\fcolorbox{yellow}{lime} {96. yā puna bhikṣuṇī } \colorbox{white}{red} {ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
+$\colorbox{lime}{96. yā puna bhikṣuṇī } \color{red}{ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
   
 $\fcolorbox{yellow}{lime} {"96. 若比丘尼。"} \colorbox{white}{red} {與減二十雨童女。受具足者波夜提。}$  
 
@@ -97,7 +98,8 @@ $\fcolorbox{yellow}{lime} {108. 若比丘尼。} \colorbox{white}{red} {畜未�
 $\fcolorbox{yellow}{lime} {108 . 若復苾芻尼知} \colorbox{white}{red} {曾嫁女人年未滿十二。與出家者。波逸底迦。}$  
 
 $\mathscr{\color{red}{yā puna bhikṣuṇī} \ \ \color{blue}{ūna-viṁśati-varṣāṁ } \ \ \color{yellow}{kumārī-bhūtāṁ upasthāpayet pācattikaṁ}}$
-$\color{red}{yā puna bhikṣuṇī} \ \ \color{blue}{ūna-viṁśati-varṣāṁ } \ \ \color{yellow}{kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$
+$\color{red}{yā puna bhikṣuṇī} \ \ \color{blue}{ūna-viṁśati-varṣāṁ } \ \ \color{yellow}{kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
+  
 $\mathscr{\color{red}{this} \ \ \color{blue}{is \ \ a \ \ paragraph} \ \ \color{yellow}{in \ \ another \ \ font}}$
 
 </details>
