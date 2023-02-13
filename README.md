@@ -72,7 +72,8 @@ adding tests for many other character sets.
     + ``如是我聞。一時佛在舍衛國祇樹給孤獨園。``  
 
 + Sample alignments from [vinaya texts](https://sites.google.com/site/sikkhamana/overview):
-    +  <details><summary>``96. yā puna bhikṣuṇī ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ``</summary>[lokottaravāda prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/lokottaravada:8rulesonsikkhamana2yearstr)</details>  
+    +  <details><summary>``96. yā puna bhikṣuṇī ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ``</summary>lokottaravāda prātimokṣa
+  https://sites.google.com/site/bhikkhunipatimokkha/lokottaravada:8rulesonsikkhamana2yearstr</details>  
     +  <details><summary>``96. 若比丘尼。與減二十雨童女。受具足者波夜提。``</summary>[mahāsāṅghika prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/mahasanghika:8rulesonsikkhamana2yearstra)</details>
     +  <details><summary>``104. 若比丘尼。與未滿十二歲已嫁女受具足戒。波逸提。``</summary>[mahīśāsaka prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/mahisasaka:8rulesonsikkhamana2yearstrain)</details>  
     +  <details><summary>``108. 若比丘尼。畜未滿十二歲已嫁女為眾。波夜提。``</summary>[sarvāstivāda prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/sarvastivada:9rulesonsikkhamana2yearstra)</details>
