@@ -53,7 +53,9 @@ Buddhist texts.
 
 <details><summary>UTF-8</summary>
 
-:joy:
+Klurp uses UTF-8 by default in order to avoid common problems with non-roman character sets.
+Klurp has been tested on Tibetan and Chinese character sets primarily and is in the process of
+adding tests for many other character sets.
 
 </details>
 
@@ -115,31 +117,17 @@ course week by week
 
 </details>
 
-<details><summary>complete portal</summary>
+# Text alignment basics:
+    + example text A
+    + example text B
+    
+    alignment process:
+      -
+      -
+      -
+      
+    
 
-10 second portal
-
-</details>
-
-<details><summary>One line install</summary>
-
-install command placeholder
-
-    git clone https://github.com/handyc/klurp.git
-
-    ln -s ~/klurp/mkklurp.py ~/scripts/mkklurp
-
-    chmod 700 ~/klurp/mkklurp.py
-
-    pip3 install sh
-
-    mkklurp [environment] [project] [app]
-
-    mkklurp [environment] [project]
-
-    mkklurp [environment]
-
-</details>
 
 # Recent Events:
 ### 5 Nov 2021
