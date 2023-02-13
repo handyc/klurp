@@ -64,6 +64,13 @@ adding tests for many other character sets.
 
 </details>
 
+<details><summary>web interface</summary>
+
+Klurp uses the Django web framework to create simple app interfaces easily.
+Klurp includes various scripts to automate the creation of these apps.
+
+</details>
+
 <details>
 <summary>Text Alignment</summary>
 
