@@ -111,7 +111,6 @@ $\mathscr{\color{red}{this} \ \ \color{blue}{is \ \ a \ \ paragraph} \ \ \color{
 </details>
 
 <details><summary>n-grams test</summary>
-$\fcolorbox{yellow}{lime} {96. yā puna bhikṣuṇī } \colorbox{white}{red} {ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ}$  
 $\color{lime}{96. yā puna bhikṣuṇī }$  
   
 $\color{lime} {96. 若比丘尼。}$  
