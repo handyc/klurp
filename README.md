@@ -23,6 +23,15 @@ The samplefiles folder and mkklurp program create a Django project meant to inte
 Klurp is undergoing major changes right now as we continue to process new materials in Chinese, Tibetan and Sanskrit.
 A new release for Klurp is planned for April 2023.
 
+``    February 2023               March 2023                   April 2023         ``  
+`` Su Mo Tu We Th Fr Sa        Su Mo Tu We Th Fr Sa         Su Mo Tu We Th Fr Sa  ``      
+``           1  2  3  4                  1  2  3  4                            1  ``  
+``  5  6  7  8  9 10 11         5  6  7  8  9 10 11          2  3  4  5  6  7  8  ``  
+`` 12 13 14 15 16 17 18        12 13 14 15 16 17 18          9 10 11 12 13 14 15  ``  
+`` 19 20 21 22 23 24 25        19 20 21 22 23 24 25         16 17 18 19 20 21 22  ``  
+`` 26 27 28                    26 27 28 29 30 31            23 24 25 26 27 28 29  ``    
+                                                            30                    ``  
+                                                        
 ![i](https://openphilology.eu/media/pages/news/524279882-1558970201/newsdatech2019.05.png)
 
 
@@ -51,11 +60,11 @@ Buddhist texts.
 <details>
 <summary>Text Alignment</summary>
 
-+ Text Alignment
++ Sample alignment from Gaṅgottaraparipṛcchā:
     +  ``’di skad bdag gis thos pa dus gcig na | bcom ldan ’das mnyan yod na rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga' ra ba na bzhugs te |``  
     + ``如是我聞。一時佛在舍衛國祇樹給孤獨園。``  
 
-+ Text Alignment 2
++ Sample alignment 2
 
 </details>
 
