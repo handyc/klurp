@@ -86,9 +86,8 @@ adding tests for many other character sets.
 
 
 <details><summary>color test</summary>
-$$\color{lime} \fcolorbox{white}{red} {’di skad bdag gis thos pa dus gcig na | bcom ldan ’das mnyan yod na rgyal bu rgyal byed kyi tshal mgon med zas sbyin gyi kun dga' ra ba na bzhugs te |``  
-    + ``如是我聞。一時佛在舍衛國祇樹給孤獨園。} $$
 $$\color{lime} \fcolorbox{white}{red} {96. yā puna bhikṣuṇī ūna-viṁśati-varṣāṁ kumārī-bhūtāṁ upasthāpayet pācattikaṁ} $$
+$$\color{lime} \fcolorbox{white}{red} {96. 若比丘尼。與減二十雨童女。受具足者波夜提。} $$
 $$\color{lime} \fcolorbox{white}{red} {104. 若比丘尼。與未滿十二歲已嫁女受具足戒。波逸提。} $$
 $$\color{lime} \fcolorbox{white}{red} {108. 若比丘尼。畜未滿十二歲已嫁女為眾。波夜提。} $$
 $$\color{lime} \fcolorbox{white}{red} {108 . 若復苾芻尼知曾嫁女人年未滿十二。與出家者。波逸底迦。} $$
