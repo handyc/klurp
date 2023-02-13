@@ -94,10 +94,10 @@ Klurp includes various scripts to automate the creation of these apps.
 <details><summary>DH Course</summary>
 
 course week by week
-+ Week 1
++ Week 1: The Unix/Linux command line
     + https://dhtools.org
     + ssh
-+ Week 2
++ Week 2: Userland
     + bash
     + nano
     + pico
