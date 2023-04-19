@@ -87,7 +87,9 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
     #JUMPY2 = int(genelimit2/alignmentsize2)
     JUMPY1 = int(alignmentsize1/2)
     JUMPY2 = int(alignmentsize2/2)
-
+    sexual = 1
+    # above flag will be set to 0 if we must create a new gene
+    
     # if gene1 does not exist, then we must create a gene from scratch
     if not gene1:
         for genecount in range(0, genesize):
@@ -125,6 +127,8 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
 
             gene1.append((startposition1, endposition1, startposition2, endposition2))
             # I think we must also create a new gene2 here to avoid problems below
+            # added sexual flag to fix this temporarily
+            sexual = 0
 
     for genecount in range(0,genesize):
 
@@ -132,7 +136,7 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
         mutation_roll = random.randint(0, 100)
 
         # randomly select a parent
-        which_parent = random.randint(0,1)
+        which_parent = random.randint(0,sexual)
 
         # if mutation occurs, then implement the mutation
         # This section is a bit messy and could be further optimized,
