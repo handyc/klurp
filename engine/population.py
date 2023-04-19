@@ -197,13 +197,15 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
                     
             if startposition1 > endposition1:
                 tempswap = startposition1
-                endposition1 = tempswap
                 startposition1 = endposition1
+                endposition1 = tempswap
+                #startposition1 = endposition1
 
             if startposition2 > endposition2:
                 tempswap = startposition2
-                endposition2 = tempswap
                 startposition2 = endposition2
+                endposition2 = tempswap
+                #startposition2 = endposition2
 
             newgene.append((startposition1, endposition1, startposition2, endposition2))
         else:
