@@ -4,7 +4,7 @@
 # this program should not be invoked directly by humans
 # but is now only called by klurp.py
 
-# last modification by handyc on 12 Nov 2021
+# last modification by handyc on 19 Apr 2023
 
 import datetime
 import time
@@ -124,6 +124,7 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
                 #startposition2 = endposition2
 
             gene1.append((startposition1, endposition1, startposition2, endposition2))
+            # I think we must also create a new gene2 here to avoid problems below
 
     for genecount in range(0,genesize):
 
