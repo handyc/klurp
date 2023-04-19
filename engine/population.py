@@ -156,16 +156,38 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
                 endposition1 += random.randint(0, JUMPY1)
                 if endposition1 > (genelimit1 - 1):
                     endposition1 -= random.randint(0, JUMPY1)
+                    
             elif distort_component == 2:
-                endposition2 += random.randint(0, JUMPY2)
-                if endposition2 > (genelimit2 - 1):
-                    endposition2 -= random.randint(0, JUMPY2)
+                startposition2 += random.randint(0, JUMPY2)
+                if startposition2 > (genelimit2 - 1):
+                    startposition2 -= random.randint(0, JUMPY2)
 
             elif distort_component == 3:
                 endposition2 += random.randint(0,JUMPY2)
                 if endposition2 > (genelimit2 - 1):
                     endposition2 -= random.randint(0, JUMPY2)
 
+            elif distort_component == 4:
+                startposition1 -= random.randint(0, JUMPY1)
+                if startposition1 < 0:
+                    startposition1 += random.randint(0, JUMPY1)
+
+            elif distort_component == 5:
+                endposition1 -= random.randint(0, JUMPY1)
+                if endposition1 < 0:
+                    endposition1 += random.randint(0, JUMPY1)
+                    
+            elif distort_component == 6:
+                startposition2 -= random.randint(0, JUMPY2)
+                if startposition2 < 0:
+                    startposition2 += random.randint(0, JUMPY2)
+
+            elif distort_component == 7:
+                endposition2 -= random.randint(0,JUMPY2)
+                if endposition2 < 0:
+                    endposition2 += random.randint(0, JUMPY2)
+
+                    
             if startposition1 > endposition1:
                 tempswap = startposition1
                 endposition1 = tempswap
