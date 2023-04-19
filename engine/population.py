@@ -111,15 +111,17 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
             # of the string, then switch the beginning and end
             if startposition1 > endposition1:
                 tempswap = startposition1
-                endposition1 = tempswap
                 startposition1 = endposition1
+                endposition1 = tempswap
+                #startposition1 = endposition1
 
             # if the beginning of the string comes after the end
             # of the string, then switch the beginning and end
             if startposition2 > endposition2:
                 tempswap = startposition2
-                endposition2 = tempswap
                 startposition2 = endposition2
+                endposition2 = tempswap
+                #startposition2 = endposition2
 
             gene1.append((startposition1, endposition1, startposition2, endposition2))
 
