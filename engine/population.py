@@ -148,7 +148,7 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
                 startposition2 = gene2[genecount][2]
                 endposition2 = gene2[genecount][3]
 
-            distort_component = random.randint(0, 3)
+            distort_component = random.randint(0, 8)
             if distort_component == 0:
                 startposition1 += random.randint(0, JUMPY1)
                 if startposition1 > (genelimit1 - 1):
