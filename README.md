@@ -33,7 +33,7 @@ Klurp is undergoing major changes right now as we continue to process new materi
 - new tutorials
 - article on proof of concept coming soon
 
-A new release for Klurp is planned for April 2023.
+A new release for Klurp is planned for June 2023.
 
 ``    February 2023               March 2023                   April 2023         ``  
 `` Su Mo Tu We Th Fr Sa        Su Mo Tu We Th Fr Sa         Su Mo Tu We Th Fr Sa  ``      
