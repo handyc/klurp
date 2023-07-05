@@ -33,17 +33,8 @@ Klurp is undergoing major changes right now as we continue to process new materi
 - new tutorials
 - article on proof of concept coming soon
 
-A new release for Klurp is planned for June 2023.
-
-``    February 2023               March 2023                   April 2023         ``  
-`` Su Mo Tu We Th Fr Sa        Su Mo Tu We Th Fr Sa         Su Mo Tu We Th Fr Sa  ``      
-``           1  2  3  4                  1  2  3  4                            1  ``  
-``  5  6  7  8  9 10 11         5  6  7  8  9 10 11          2  3  4  5  6  7  8  ``  
-`` 12 13 14 15 16 17 18        12 13 14 15 16 17 18          9 10 11 12 13 14 15  ``  
-`` 19 20 21 22 23 24 25        19 20 21 22 23 24 25         16 17 18 19 20 21 22  ``  
-`` 26 27 28                    26 27 28 29 30 31            23 24 25 26 27 28 29  ``    
-``                                                          30                    ``  
-                                                        
+A new release for Klurp is planned for October 2023.
+                                              
 ![i](https://openphilology.eu/media/pages/news/524279882-1558970201/newsdatech2019.05.png)
 
 <details><summary>History</summary>
