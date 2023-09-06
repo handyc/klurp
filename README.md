@@ -159,7 +159,17 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
     + easy to extend with custom code
 
 # Recent / Upcoming Events:
-### 6 June 2023
+### 29 September 2023
+<details><summary>Automated Alignment of Vinaya Texts: an Evolutionary Strategy
+</summary>
+
+![Buddhism and Law: Third International Conference](https://www.buffalo.edu/baldycenter/events/conferences/buddhism-2023.html)
+
+Automated Alignment of Vinaya Texts: an Evolutionary Strategy
+
+Abstract: This presentation demonstrates a novel method for automated crosslinguistic alignment of vinaya (monastic law) texts in Sanskrit, Tibetan, Chinese and other languages using a simple but effective genetic algorithm, with an example implementation in Python, and a Django web interface. Text alignment is a process of locating similar passages across different versions of documents. The degree to which two passages are similar is a matter open to debate; what similarity means in literature may be mathematically undefinable, due to the non-logical structure of human language. Vinaya texts occur in multiple versions for various reasons, including translations, document drafts, sectarian disagreements, and other phenomena of text transmission. They serve as a good case study for text alignment problems in general. While some alignments between texts may seem obvious to human readers, there are also instances where alignment boundaries are ambiguous or unresolvable even for trained specialists. It is therefore nontrivial to perform the same task on a computer and achieve quality results without intervention from the user. The system described here is open source and free for anyone to use and modify, without restrictions. It can be run on personal computers, cluster computers, mobile phones, and various other computing devices.
+</details>
+
 <details><summary>Cross-linguistic Text Alignment: An Evolutionary Approach
 </summary>
 
