@@ -8,7 +8,11 @@
 
 ### klurp is a general purpose toolkit for making custom
 ### language apps for any languages to do any computational tasks
-#### (documentation in process)
+
+#### TL;DR -- use the following command to get started:
+git clone https://github.com/handyc/klurp
+
+Be sure to use some version of Python 3 (not Python 2)!
 
 ***
 
