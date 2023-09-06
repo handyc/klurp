@@ -10,9 +10,16 @@
 ### language apps for any languages to do any computational tasks
 
 #### TL;DR -- use the following command to get started:
+```
 git clone https://github.com/handyc/klurp
+```
 
-Be sure to use some version of Python 3 (not Python 2)!
+> **Note**<br>
+Your note text here
+
+> **Warning**<br>
+Your warning text here
+
 
 ***
 
