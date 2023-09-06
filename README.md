@@ -14,11 +14,8 @@
 git clone https://github.com/handyc/klurp
 ```
 
-> **Note**<br>
-Your note text here
-
-> **Warning**<br>
-Your warning text here
+> **Warning**
+Be sure to use some version of Python 3 and not Python 2!
 
 
 ***
