@@ -82,17 +82,12 @@ adding tests for many other character sets.
     +  <details><summary>``104. 若比丘尼。與未滿十二歲已嫁女受具足戒。波逸提。``</summary>[mahīśāsaka prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/mahisasaka:8rulesonsikkhamana2yearstrain)</details>  
     +  <details><summary>``108. 若比丘尼。畜未滿十二歲已嫁女為眾。波夜提。``</summary>[sarvāstivāda prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/sarvastivada:9rulesonsikkhamana2yearstra)</details>
     +  <details><summary>``108 . 若復苾芻尼知曾嫁女人年未滿十二。與出家者。波逸底迦。``</summary>[mūlasarvāstivāda prātimokṣa](https://sites.google.com/site/bhikkhunipatimokkha/mulasarvas(chinese):6rulesonsikkhamanatr)</details>
-   
-+ Sample alignment [sutta](https://suttacentral.net/mn12)
-+ Sample alignment sutra
-+ [rkts tibetan canons](https://github.com/brunogml/rKTs)
+    
 + https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&vid=511&view=fulltext
      +  utpādātyantavighno ’nyo nirodho ’pratisaṃkhyayā || 1.6 || 
      + 偈曰 恒遮欲生生 別有非擇滅 
      + 永礙當生得非擇滅 
-     + | skye la gtan du bgegs byed pa | ’gog gźan so sor brtags min pas | 
-+ Sample alignment [abhidharma](https://www.academia.edu/35577177/A_translation_of_the_quotations_in_%C5%9Aamathadevas_Abhidharmako%C5%9Bop%C4%81yik%C4%81_%E1%B9%AD%C4%ABk%C4%81_parallel_to_the_Chinese_Sa%E1%B9%83yukta_%C4%81gama_discourses_231_238_240_245_252_and_255)
-+ https://read.84000.co/translation/toh72.html  
+     + | skye la gtan du bgegs byed pa | ’gog gźan so sor brtags min pas |  
 </details>
 
 
