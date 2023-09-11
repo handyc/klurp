@@ -9,6 +9,8 @@
 ### klurp is a general purpose toolkit for making custom
 ### language apps for any languages to do any computational tasks
 
+***
+
 #### TL;DR -- use the following command to get started:
 ```
 git clone https://github.com/handyc/klurp
@@ -16,7 +18,6 @@ git clone https://github.com/handyc/klurp
 
 > **Note**
 Be sure to use some version of Python 3 and not Python 2!
-
 
 ***
 
@@ -29,7 +30,99 @@ Be sure to use some version of Python 3 and not Python 2!
 Klurp is primarily a text alignment system that employs a simple genetic algorithm to find semantic matches between arbitrary texts. It was initially created in order to align classical Chinese and Tibetan translations of Buddhist texts originally composed in Sanskrit, for the ERC [Open Philology](https://cordis.europa.eu/project/id/741884) project. With additional feedback from scholars in other areas of language research, this system was then extended for use with a wide variety of applications across any language pairs. It uses multi-lingual dictionaries to compare similarities of strings, or when these are unavailable it creates
 dictionaries from previously seen source materials.
 
-The main engine for Klurp is contained in the 'engine' folder in this repository. It is meant to be called by the klurp.py wrapper program, which parses user input. The engine can also be called directly in special instances where the wrapper is not desired.
+#
+# 2. Installation
+#
+
+Create a virtual environment using venv
+(name it anything you like, i.e. "klurpenv" can be anything you think is sensible):
+```
+python3 -m venv klurpenv
+```
+
+
+Change your location to the new environment:
+
+```
+cd klurpenv
+```
+
+Activate the virtual environment:
+
+```
+source bin/activate
+```
+
+Grab the main klurp files from the klurp github repo:
+
+```
+git clone https://github.com/handyc/klurp
+```
+
+Use pip to install various external modules:
+
+```
+pip install [module-name]
+```
+
+Use pip to install Django (if you don't want the Django interface, you don't need to do this part):
+
+```
+pip install django-admin
+```
+
+Use pip to install Gunicorn (used for a socket server for Django app):
+
+```
+pip install gunicorn
+```
+
+#
+# 3. Usage
+#
+
+Navigate to the virtual environment you created for klurp (here, the virtual environment is named 'klurpenv'):
+
+```
+cd klurpenv
+```
+
+Be sure to activate the virtual environment before each use:
+
+```
+source bin/activate
+```
+
+Navigate to the klurp directory inside the virtual environment:
+
+```
+cd klurp
+```
+
+Run the main klurp.py script as you would any Python script:
+
+```
+python klurp.py
+```
+
+You can supply additional arguments to specify your files, population size and mutation rate:
+
+```
+python klurp.py [witness1] [witness2] [popsize] [generations] [mutation rate]
+```
+
+When you are done using klurp, you can deactivate the virtual environment with the 'deactivate' command:
+
+```
+deactivate
+```
+
+#
+# 4. Additional Information
+#
+
+The main engine for Klurp is contained in the 'engine' folder in this repository. It is meant to be called by the klurp.py wrapper program, which parses user input. The engine can also be called directly in special instances where the wrapper is not desired. The entire system is made to be highly customizable, which is the reason everything is in separate files. If you screw something up,
+just remove the virtual environment and try again!
 
 The samplefiles folder and mkklurp program create a Django project meant to interact with the klurp engine and the data it produces, so that complete interactive web portals can be created from these data very quickly.
 
@@ -108,7 +201,10 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
 
 </details>
 
-# Text alignment basics:
+#
+# 5. Text alignment basics:
+#
+
     + example text A
     + example text B
     
@@ -117,7 +213,10 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
       -
       -
       
-# additional features
+#
+# 6. Additional Features:
+#
+
     + automatic n-grams statistics (see my n-grams utility, aks) 
     + automatic dictionary creation (this feature is not completely working yet)
     + continuously updated alignments
@@ -127,7 +226,10 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
     + step based system preserves data across generations automatically, easy to archive
     + easy to extend with custom code
 
-# Recent / Upcoming Events:
+#
+# 7. Recent / Upcoming Events:
+#
+
 ### 29 September 2023
 <details><summary>Automated Alignment of Vinaya Texts: an Evolutionary Strategy
 </summary>
