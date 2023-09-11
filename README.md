@@ -11,7 +11,7 @@
 
 ***
 
-#### TL;DR -- use the following command to get started:
+#### TL;DR -- use the following command to get started (more complex installation method in section 2):
 ```
 git clone https://github.com/handyc/klurp
 ```
