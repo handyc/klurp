@@ -214,7 +214,43 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
       -
       
 #
-# 6. Additional Features:
+# 6. Creating your own dictionaries:
+#
+
+Dictionaries are standard CSV files that follow a simple format:
+
+term1,term2
+
+You can create dictionaries for any language pairs using any unicode characters.
+Use UTF-8 format only to prevent unpredictable results!
+
+Example dictionary entry:
+
+"恒河上","gang gā'i mchog"
+
+You can have multiple dictionaries for a single pair of texts.
+The klurp system expects texts and dictionaries in the following directory format:
+
+```
+projectname
+|
+--text1
+|   |
+|   text1.txt
+|
+--text2
+|   |
+|   text2.txt
+|
+--dictionary
+       |
+       dict1.csv
+       |
+       dict2.csv
+```
+
+#
+# 7. Additional Features:
 #
 
     + automatic n-grams statistics (see my n-grams utility, aks) 
@@ -227,7 +263,7 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
     + easy to extend with custom code
 
 #
-# 7. Recent / Upcoming Events:
+# 8. Recent / Upcoming Events:
 #
 
 ### 29 September 2023
