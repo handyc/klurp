@@ -202,7 +202,7 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
 </details>
 
 #
-# 5. Text alignment basics:
+# 5. Text alignment basics
 #
 
     + example text A
@@ -214,7 +214,7 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
       -
       
 #
-# 6. Creating your own dictionaries:
+# 6. Creating Custom Dictionaries
 #
 
 Dictionaries are standard CSV files that follow a simple format:
@@ -250,7 +250,7 @@ projectname
 ```
 
 #
-# 7. Additional Features:
+# 7. Additional Features
 #
 
     + automatic n-grams statistics (see my n-grams utility, aks) 
@@ -263,7 +263,7 @@ projectname
     + easy to extend with custom code
 
 #
-# 8. Recent / Upcoming Events:
+# 8. Recent / Upcoming Events
 #
 
 ### 29 September 2023
