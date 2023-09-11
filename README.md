@@ -164,6 +164,8 @@ However, if we attempt to automate this process, we quickly find that defining f
 <details><summary>Full Stack Language Apps from the Bottom Up: Custom Online Portals for Humanities Research Using Linux, Python, Django & other Open Source Tools
 </summary>
 
+[LUCDH lunchtime speaker series](https://www.universiteitleiden.nl/en/events/2021/11/lucdh-lunchtime-speaker-series-christopher-handy)
+
 ![LUCDH](https://openphilology.eu/media/pages/partners/1327078252-1625255917/lucdhweb.png)
 Join us for the LUCDH lunchtime talk presented by Dr. Christopher Handy  on Wednesday, 3 November at 12:00 – 13:00.
 
@@ -181,7 +183,6 @@ We very much hope that you can join this live event in the Digital Lab in P.J. V
 </details>
 
 
-### https://www.universiteitleiden.nl/en/events/2021/11/lucdh-lunchtime-speaker-series-christopher-handy
-#
+
 
 
