@@ -95,7 +95,7 @@ adding tests for many other character sets.
 Klurp uses the Django web framework to create simple app interfaces easily.
 Klurp includes various scripts to automate the creation of these apps.
 
-Link to Klurp demo page [coming soon](https://github.com)
+Link to Klurp demo page [coming soon](https://philology.dhtools.org)
 
 </details>
 
