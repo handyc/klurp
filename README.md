@@ -120,7 +120,6 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
 # additional features
     + automatic n-grams statistics (see my n-grams utility, aks) 
     + automatic dictionary creation (this feature is not completely working yet)
-    + automatic alignment from current information
     + continuously updated alignments
     + user input through simple web interface
     + basic custom django app for unique data from template
