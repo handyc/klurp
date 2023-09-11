@@ -157,8 +157,6 @@ However, if we attempt to automate this process, we quickly find that defining f
 <details><summary>Cross-linguistic Text Alignment: An Evolutionary Approach
 </summary>
 
-![Leiden HumAN](https://lu-human.github.io/news/)
-
 Cross-linguistic Text Alignment: An Evolutionary Approach
 
 Abstract: Text alignment is the process of finding similar passages across two or more documents. Text alignment is a process that can be useful in examining multiple versions of a document, whether in one or several languages, or in searching for text re-use within a collection of disparate documents. Some examples of the types of projects that benefit from text alignment include: 1) matching parallel readings of Bible passages across different translations, 2) compiling multiple versions of "Little Red Riding Hood" or other popular narratives, and 3) locating thematically similar texts within a larger corpus (e.g. finding medical literature within a Buddhist canon). Traditionally, the process of text alignment is done by a human being, and the determination of the boundaries of aligned segments is largely intuited from the education and experience of the researcher.
