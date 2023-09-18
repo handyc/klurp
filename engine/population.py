@@ -4,7 +4,7 @@
 # this program should not be invoked directly by humans
 # but is now only called by klurp.py
 
-# last modification by handyc on 19 Apr 2023
+# last modification by handyc on 18 Sep 2023
 
 import datetime
 import time
