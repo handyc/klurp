@@ -318,7 +318,7 @@ Q: Have you considered using an LLM (large language model) instead of this syste
 A: Yes. LLMs have done various amazing things recently. The initial project for which klurp was created
 did not have anything close to the amount of training data that would be needed for using such a solution
 successfully. It is certainly possible that there are other text alignment projects for which an LLM would
-be more effective than klurp, especially in cases where large amount of training data are available. The
+be more effective than klurp, especially in cases where large amounts of training data are available. The
 main benefit of using klurp is that it does not require any training data at all, which makes it ideal for
 low resource languages and projects where the source files are very messy.
 
