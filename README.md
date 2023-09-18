@@ -310,7 +310,42 @@ files in samplefiles in order to run the klurp engine, but they may be helpful i
 of the different types of projects that are possible to create.
 
 #
-# 9. Recent / Upcoming Events
+# 9. Frequently Asked Questions
+#
+
+Q: Have you considered using an LLM (large language model) instead of this system?
+
+A: Yes. LLMs have done various amazing things recently. The initial project for which klurp was created
+did not have anything close to the amount of training data that would be needed for using such a solution
+successfully. It is certainly possible that there are other text alignment projects for which an LLM would
+be more effective than klurp, especially in cases where large amount of training data are available. The
+main benefit of using klurp is that it does not require any training data at all, which makes it ideal for
+low resource languages and projects where the source files are very messy.
+
+Q: Is this an automated text translator?
+
+A: Klurp was created for use as a text alignment engine, which is not directly related to the task of
+machine translation. If you are looking for a program that translates from one language to another, klurp
+is probably not what you are looking for.
+
+Q: What happened to all of the dictionaries? Why don't you supply dictionaries for X/Y/Z language?
+
+A: Some sample dictionaries for klurp are available in the samplefiles folder. I am unfortunately not able
+to distribute various traditional multilingual dictionaries due to intellectual property restrictions.
+You can always convert dictionaries that you acquire from other sources into the simple .CSV format used
+by the klurp system (how you go about doing this conversion depends largely on the format of the source files).
+
+See for example:
+
+[here](https://www2.hf.uio.no/polyglotta/index.php?page=volume&vid=263)
+
+and
+
+[here](https://buddhistinformatics.dila.edu.tw/glossaries/glossaries.php)
+
+
+#
+# 10. Recent / Upcoming Events
 #
 
 ### 29 September 2023
