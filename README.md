@@ -253,14 +253,52 @@ projectname
 # 7. Additional Features
 #
 
-    + automatic n-grams statistics (see my n-grams utility, aks) 
-    + automatic dictionary creation (this feature is not completely working yet)
-    + continuously updated alignments
-    + user input through simple web interface
-    + basic custom django app for unique data from template
-    + engine automatically adjusts to available processors
-    + step based system preserves data across generations automatically, easy to archive
-    + easy to extend with custom code
+<details><summary>automatic n-grams statistics (see my n-grams utility, aks)</summary>
+![aks](https://github.com/handyc/aks)
+This feature is being merged into the main klurp repo but is not yet available here --
+for the time being please use the aks repo to generate n-grams for your texts.
+</details>
+
+<details><summary>automatic dictionary creation (this feature is not completely working yet)</summary>
+This feature is being merged into the main klurp repo but is not yet available here --
+for the time being please use the aks repo to generate n-grams for your texts.
+</details>
+
+<details><summary>continuously updated alignments</summary>
+(using Django management commands and cron) -- documentation on this feature in progress
+</details>
+
+<details><summary>user input through simple web interface</summary>
+Django interface -- documentation in progress
+</details>
+
+<details><summary>basic custom django app for unique data from template</summary>
+see samplefiles to get started making your own custom Django interface for your project's specific needs
+</details>
+
+<details><summary>engine automatically adjusts to available processors</summary>
+The klurp system detects the number of processors available and sets itself to use a custom-defined
+percentage of that total, in order to prevent itself from completely taking over your machine.
+Klurp has also been tested successfully on SLURM systems and can autodetect if SLURM is available
+and the number of available processors. The code is fairly simple and well commented, so you should
+be able to modify it to work on other cluster setups as well. Please contact me if you are interested
+in working together to add these types of features.
+</details>
+
+<details><summary>basic custom django app for unique data from template</summary>
+see samplefiles to get started making your own custom Django interface for your project's specific needs
+</details>
+
+<details><summary>easy to extend with custom code</summary>
+Klurp was designed from scratch with a mind toward messy data files acquired from various sources.
+It is made to be easy to customize for any languages, any file formats, etc.
+</details>
+
+<details><summary>step based system preserves data across generations automatically, easy to archive</summary>
+Klurp remembers its last state based on datetime-stamped gene files, so that you can always pick up
+where you left off. The gene files are very portable, meaning that you can transfer them to another system
+without losing any information.
+</details>
 
 #
 # 8. Recent / Upcoming Events
