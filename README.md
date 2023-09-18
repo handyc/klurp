@@ -301,7 +301,16 @@ without losing any information.
 </details>
 
 #
-# 8. Recent / Upcoming Events
+# 8. Sample Files
+#
+
+The files in the samplefiles directory are mostly unfinished, and meant to be used as templates for
+getting started with a custom Django app linked to the main klurp engine. You don't need any of the
+files in samplefiles in order to run the klurp engine, but they may be helpful in getting some ideas
+of the different types of projects that are possible to create.
+
+#
+# 9. Recent / Upcoming Events
 #
 
 ### 29 September 2023
