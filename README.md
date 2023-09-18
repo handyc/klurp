@@ -254,7 +254,7 @@ projectname
 #
 
 <details><summary>automatic n-grams statistics (see my n-grams utility, aks)</summary>
-![aks](https://github.com/handyc/aks)
+https://github.com/handyc/aks
 This feature is being merged into the main klurp repo but is not yet available here --
 for the time being please use the aks repo to generate n-grams for your texts.
 </details>
