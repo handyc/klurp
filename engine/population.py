@@ -28,7 +28,15 @@ friendlyname = "population manager"
 
 # automatically determine number of threads available
 # and use only 3/4 so that computer is not overwhelmed
-numcores = int(multiprocessing.cpu_count()*.75)
+# or if using SLURM, use requested amount of CPUs from SLURM
+
+try:
+    numcores = int(os.environ['SLURM_JOB_CPUS_PER_NODE'])
+except:
+    numcores = int(multiprocessing.cpu_count()*.75)
+
+if numcores < 1:
+        numcores = int(1)
 
 # grab arguments --
 # The reason for taking in arguments this way is due to the
