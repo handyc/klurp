@@ -232,21 +232,16 @@ You can have multiple dictionaries for a single pair of texts.
 The klurp system expects texts and dictionaries in the following directory format:
 
 ```
-projectname
-|
---text1
-|   |
-|   text1.txt
-|
---text2
-|   |
-|   text2.txt
-|
---dictionary
-       |
-       dict1.csv
-       |
-       dict2.csv
+projectname/
+├── dictionaries/
+│   ├── dict1.csv
+│   ├── dict2.csv
+│   └── anyname.csv
+├── text1/
+│   └── anyname.txt
+└── text2/
+    └── anyname.txt
+
 ```
 
 #
