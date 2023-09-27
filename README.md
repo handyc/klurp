@@ -236,6 +236,10 @@ projectname/
 
 ```
 
+*Actually, I changed my mind, you can put the dictionaries anywhere you like now,
+but it makes sense to put them in the same place as your other texts so that you can
+keep track of them. 
+
 #
 # 7. Additional Features
 #
