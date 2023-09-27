@@ -204,14 +204,6 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
 #
 # 5. Text alignment basics
 #
-
-    + example text A
-    + example text B
-    
-    alignment process:
-      -
-      -
-      -
       
 #
 # 6. Creating Custom Dictionaries
