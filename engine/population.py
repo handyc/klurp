@@ -4,7 +4,7 @@
 # this program should not be invoked directly by humans
 # but is now only called by klurp.py
 
-# last modification by handyc on 18 Sep 2023
+# last modification by handyc on 27 Sep 2023
 
 import datetime
 import time
@@ -23,8 +23,16 @@ import multiprocessing
 import csv
 from agent import agent
 
+#genestring="/home/handyca/data/bls/genes"
+genestring="/Users/handyc/data/bls/genes"
+
+#outputstring="/home/handyca/data/bls/output/csv"
+outputstring="/Users/handyc/data/bls/output/csv"
+
 # the name of this subprogram
 friendlyname = "population manager"
+
+# SLURM
 
 # automatically determine number of threads available
 # and use only 3/4 so that computer is not overwhelmed
@@ -36,7 +44,7 @@ except:
     numcores = int(multiprocessing.cpu_count()*.75)
 
 if numcores < 1:
-        numcores = int(1)
+    numcores = int(1)
 
 # grab arguments --
 # The reason for taking in arguments this way is due to the
@@ -65,6 +73,13 @@ if maxagents < 2:
 text1 = sys.argv[4]
 text2 = sys.argv[5]
 
+dictpass = sys.argv[6]
+
+
+
+# dictionary
+#dictionary = int(sys.argv[6])
+
 # path information for home directory, location of engine and outer layer
 home = str(Path.home())
 engine = os.path.dirname(__file__)
@@ -75,7 +90,8 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
     newgene = []
 
     alignmentsize1 = 100
-    alignmentsize2 = 400
+    #alignmentsize2 = 400
+    alignmentsize2 = 100
 
     # genesize should always be greater than zero
     # but just in case it isn't, we set the size to a default value
@@ -224,7 +240,7 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
             newgene.append(parentseg)
     return newgene
 
-def population(gen, size, mutrate, text1, text2):
+def population(gen, size, mutrate, text1, text2, dictpass):
     """thread worker function"""
 
     # inform the user about which texts are being used
@@ -232,6 +248,7 @@ def population(gen, size, mutrate, text1, text2):
     # the correct witnesses.
     print("text1: " + text1)
     print("text2: " + text2)
+    #print("dictionary: " + dictloc)
 
     # create a shortened name from the full pathname of each text
     text1short = os.path.splitext(os.path.basename(text1))[0]
@@ -243,10 +260,10 @@ def population(gen, size, mutrate, text1, text2):
     w1_w2 = str(text1short + "_" + text2short)
 
     # create the appropriate path for this alignment pair's genes
-    genedir = os.path.join(klurp, "projects/openphilology/genes", w1_w2)
+    genedir = os.path.join(klurp, genestring, w1_w2)
 
     # all csv output files go to the same location for easy access
-    csvdir = os.path.join(klurp, "output/csv")
+    csvdir = os.path.join(klurp, outputstring)
 
     # information concerning the initialization time of this population
     start = datetime.datetime.now()
@@ -327,6 +344,17 @@ def population(gen, size, mutrate, text1, text2):
     genesize1 = int(numchars1 / 10)
     genesize2 = int(numchars2 / 10)
 
+    mingenesize = 100
+
+    if genesize1 < mingenesize:
+        genesize1 = mingenesize
+
+    if genesize2 < mingenesize:
+        genesize2 = mingenesize
+
+    #genesize1 = int(20)
+    #genesize2 = int(20)
+
     # determine which of two potential gene sizes is smaller
     # and use the smaller one
     if genesize1 < genesize2:
@@ -359,7 +387,7 @@ def population(gen, size, mutrate, text1, text2):
         # Now we send each gene to an individual agent
         # Initialize each agent as a separate process
         with multiprocessing.Pool(processes=numcores) as pool:
-            args = [(text1,text2, gene[x],) for x in range(0,maxagents)]
+            args = [(text1,text2, gene[x], dictpass,) for x in range(0,maxagents)]
             results = pool.starmap(agent, args)
         # agents have now completed execution at this point
 
@@ -398,11 +426,16 @@ def population(gen, size, mutrate, text1, text2):
         f.write("\n")
     f.close()
 
+
+    # create csv output dir if does not exist
+    if not os.path.exists(csvdir):
+        os.makedirs(csvdir)
+
     # generate a timestamped filename for the human readable csv output
     csvname = str(fstart) + ".csv"
     outputcsv = os.path.join(csvdir, csvname)
 
-    # actually write out the file to /output/csv
+    # actually write out the file to output directory
     with open(outputcsv, 'w', newline='') as newcsv:
         outputwriter = csv.writer(newcsv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         # save only the winner to prevent giant csv files --
@@ -430,4 +463,4 @@ def population(gen, size, mutrate, text1, text2):
     return
 
 if __name__ == '__main__':
-    population(maxgen, maxagents, mutrate, text1, text2)
+    population(maxgen, maxagents, mutrate, text1, text2, dictpass)
