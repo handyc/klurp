@@ -92,8 +92,7 @@ if argument_count>6 and sys.argv[4].isnumeric():
     popsize = sys.argv[3]
     generations = sys.argv[4]
     mutrate = sys.argv[5]
-    #dictloc = sys.argv[6]
-    dictloc = "/Users/handyc/data/bls/example1/dictionaries"
+    dictloc = sys.argv[6]
 
 # display usage information
 else:
