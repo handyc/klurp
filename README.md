@@ -105,11 +105,15 @@ Run the main klurp.py script as you would any Python script:
 python klurp.py
 ```
 
-You can supply additional arguments to specify your files, population size and mutation rate:
+Supply additional arguments to specify your files, population size, mutation rate and dictionary location:
 
 ```
-python klurp.py [witness1] [witness2] [popsize] [generations] [mutation rate]
+python klurp.py [witness1] [witness2] [popsize] [generations] [mutation rate] [dictionaries directory]
 ```
+
+I'm planning to add better argument parsing to klurp very soon, because these arguments are getting way
+out of control now! Sorry. The old system had defaults for all of these things, but the system currently
+requires you to specify all of these things, otherwise it has no idea what you are trying to do.
 
 When you are done using klurp, you can deactivate the virtual environment with the 'deactivate' command:
 
