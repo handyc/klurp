@@ -94,6 +94,16 @@ Having these variables allows for klurp to be invoked with shorter subdirectory 
 but it's a bit of a hassle changing it for each system. This setting is eventually
 going in a separate settings file.
 
+in population.py:
+```
+genestring="/Users/handyc/data/bls/genes"
+outputstring="/Users/handyc/data/bls/output/csv"
+```
+
+Above are the locations of the directories where your genes and output files are kept.
+These settings will also go in one main settings file eventually. If the named directories
+do not exist, they will be created when klurp needs to use them.
+
 
 #
 # 4. Usage
