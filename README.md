@@ -78,7 +78,25 @@ pip install gunicorn
 ```
 
 #
-# 3. Usage
+# 3. Setup
+#
+
+Change the following directory locations to your preferences:
+
+in klurp.py:
+```
+text1loc = "/Users/handyc/data/bls/"
+text2loc = "/Users/handyc/data/bls/"
+```
+
+Above are the locations of the main directories where projects are kept.
+Having these variables allows for klurp to be invoked with shorter subdirectory names,
+but it's a bit of a hassle changing it for each system. This setting is eventually
+going in a separate settings file.
+
+
+#
+# 4. Usage
 #
 
 Navigate to the virtual environment you created for klurp (here, the virtual environment is named 'klurpenv'):
@@ -122,7 +140,7 @@ deactivate
 ```
 
 #
-# 4. Additional Information
+# 5. Additional Information
 #
 
 The main engine for Klurp is contained in the 'engine' folder in this repository. It is meant to be called by the klurp.py wrapper program, which parses user input. The engine can also be called directly in special instances where the wrapper is not desired. The entire system is made to be highly customizable, which is the reason everything is in separate files. If you screw something up,
@@ -206,14 +224,14 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
 </details>
 
 #
-# 5. Text alignment basics
+# 6. Text alignment basics
 #
 
 Look for my article soon in BLS 9!
 https://www.law.buffalo.edu/beyond/journals/buddhism.html
       
 #
-# 6. Creating Custom Dictionaries
+# 7. Creating Custom Dictionaries
 #
 
 Dictionaries are standard CSV files that follow a simple format:
@@ -248,7 +266,7 @@ but it makes sense to put them in the same place as your other texts so that you
 keep track of them. 
 
 #
-# 7. Additional Features
+# 8. Additional Features
 #
 
 <details><summary>automatic n-grams statistics (see my n-grams utility, aks)</summary>
@@ -299,7 +317,7 @@ without losing any information.
 </details>
 
 #
-# 8. Sample Files
+# 9. Sample Files
 #
 
 The files in the samplefiles directory are mostly unfinished, and meant to be used as templates for
@@ -308,7 +326,7 @@ files in samplefiles in order to run the klurp engine, but they may be helpful i
 of the different types of projects that are possible to create.
 
 #
-# 9. Frequently Asked Questions
+# 10. Frequently Asked Questions
 #
 
 Q: Have you considered using an LLM (large language model) instead of this system?
@@ -343,7 +361,7 @@ and
 
 
 #
-# 10. Recent / Upcoming Events
+# 11. Recent / Upcoming Events
 #
 
 ### 29 September 2023
