@@ -139,6 +139,18 @@ Supply additional arguments to specify your files, population size, mutation rat
 python klurp.py [witness1] [witness2] [popsize] [generations] [mutation rate] [dictionaries directory]
 ```
 
+example:
+```
+python3 klurp.py example2/text1 example2/text2 10000 100 3 /Users/handyc/data/bls/example2/dictionaries
+```
+
+where "example2" is a subdirectory under "/Users/handyc/data/bls/" (specified in the directory variables above)
+
+The dictionaries directory is specified as a full path in order to make it easy to swap out dictionaries.
+
+This system made sense to me at the time, but I think it is probably very confusing for everyone else,
+so my plan is to revamp this section and put all of these things into a settings file soon.
+
 I'm planning to add better argument parsing to klurp very soon, because these arguments are getting way
 out of control now! Sorry. The old system had defaults for all of these things, but the system currently
 requires you to specify all of these things, otherwise it has no idea what you are trying to do.
