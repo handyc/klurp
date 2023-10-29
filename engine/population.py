@@ -7,27 +7,22 @@
 # last modification by handyc on 27 Sep 2023
 
 import datetime
-import time
-
-import glob
-import string
-
-from pathlib import Path
-
 import os
 import sys
 import random
-
+import glob
 import multiprocessing
-
 import csv
+
+from pathlib import Path
+
 from agent import agent
 
-#genestring="/home/handyca/data/bls/genes"
-genestring="/Users/handyc/data/bls/genes"
+# genestring="/home/handyca/data/bls/genes"
+genestring = "/Users/handyc/data/bls/genes"
 
-#outputstring="/home/handyca/data/bls/output/csv"
-outputstring="/Users/handyc/data/bls/output/csv"
+# outputstring="/home/handyca/data/bls/output/csv"
+outputstring = "/Users/handyc/data/bls/output/csv"
 
 # the name of this subprogram
 friendlyname = "population manager"
@@ -43,9 +38,7 @@ try:
 except:
     numcores = int(multiprocessing.cpu_count()*.75)
 
-if numcores < 1:
-    numcores = int(1)
-
+numcores = max(numcores, 1)
 # grab arguments --
 # The reason for taking in arguments this way is due to the
 # historical development of this system -- initially this file
@@ -66,8 +59,7 @@ mutrate = int(sys.argv[3])
 
 # need at least 2 agents for combination
 # so set to 2 if we don't have enough
-if maxagents < 2:
-    maxagents = 2
+maxagents = max(maxagents, 2)
 
 # paths to the text files we want to process
 text1 = sys.argv[4]
@@ -76,9 +68,8 @@ text2 = sys.argv[5]
 dictpass = sys.argv[6]
 
 
-
 # dictionary
-#dictionary = int(sys.argv[6])
+# dictionary = int(sys.argv[6])
 
 # path information for home directory, location of engine and outer layer
 home = str(Path.home())
@@ -86,49 +77,41 @@ engine = os.path.dirname(__file__)
 klurp = os.path.dirname(engine)
 
 # function to generate a gene
+
+
 def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
     newgene = []
 
     alignmentsize1 = 100
-    #alignmentsize2 = 400
+    # alignmentsize2 = 400
     alignmentsize2 = 100
 
     # genesize should always be greater than zero
     # but just in case it isn't, we set the size to a default value
     # of 1 alignment to prevent divide by zero error
-    if genesize < 1:
-        genesize = 1
-
-    if alignmentsize1 < 1:
-        alignmentsize1 = 1
-    if alignmentsize2 < 1:
-        alignmentsize2 = 1
-
-
-    #JUMPY1 = int(genelimit1/genesize)
-    #JUMPY2 = int(genelimit2/genesize)
-    #JUMPY1 = int(genelimit1/alignmentsize1)
-    #JUMPY2 = int(genelimit2/alignmentsize2)
+    genesize = max(genesize, 1)
+    alignmentsize1 = max(alignmentsize1, 1)
+    alignmentsize2 = max(alignmentsize2, 1)
+    # JUMPY1 = int(genelimit1/genesize)
+    # JUMPY2 = int(genelimit2/genesize)
+    # JUMPY1 = int(genelimit1/alignmentsize1)
+    # JUMPY2 = int(genelimit2/alignmentsize2)
     JUMPY1 = int(alignmentsize1/2)
     JUMPY2 = int(alignmentsize2/2)
     sexual = 1
     # above flag will be set to 0 if we must create a new gene
-    
+
     # if gene1 does not exist, then we must create a gene from scratch
     if not gene1:
-        for genecount in range(0, genesize):
+        for genecount in range(genesize):
             startposition1 = int(genecount * (genelimit1/genesize))
-            if startposition1 < 0:
-                startposition1 = 0
-
+            startposition1 = max(startposition1, 0)
             endposition1 = startposition1 + alignmentsize1
             if endposition1 > (genelimit1 - 1):
                 endposition1 -= JUMPY1
 
             startposition2 = int(genecount * (genelimit2/genesize))
-            if startposition2 < 0:
-                startposition2 = 0
-
+            startposition2 = max(startposition2, 0)
             endposition2 = startposition2 + alignmentsize2
             if endposition2 > (genelimit2 - 1):
                 endposition2 -= JUMPY2
@@ -136,31 +119,28 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
             # if the beginning of the string comes after the end
             # of the string, then switch the beginning and end
             if startposition1 > endposition1:
-                tempswap = startposition1
-                startposition1 = endposition1
-                endposition1 = tempswap
-                #startposition1 = endposition1
+                startposition1, endposition1 = endposition1, startposition1
+                # startposition1 = endposition1
 
             # if the beginning of the string comes after the end
             # of the string, then switch the beginning and end
             if startposition2 > endposition2:
-                tempswap = startposition2
-                startposition2 = endposition2
-                endposition2 = tempswap
-                #startposition2 = endposition2
+                startposition2, endposition2 = endposition2, startposition2
+                # startposition2 = endposition2
 
-            gene1.append((startposition1, endposition1, startposition2, endposition2))
+            gene1.append((startposition1, endposition1,
+                         startposition2, endposition2))
             # I think we must also create a new gene2 here to avoid problems below
             # added sexual flag to fix this temporarily
             sexual = 0
 
-    for genecount in range(0,genesize):
+    for genecount in range(genesize):
 
         # generate a random number to see if mutation should occur
         mutation_roll = random.randint(0, 100)
 
         # randomly select a parent
-        which_parent = random.randint(0,sexual)
+        which_parent = random.randint(0, sexual)
 
         # if mutation occurs, then implement the mutation
         # This section is a bit messy and could be further optimized,
@@ -187,14 +167,14 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
                 endposition1 += random.randint(0, JUMPY1)
                 if endposition1 > (genelimit1 - 1):
                     endposition1 -= random.randint(0, JUMPY1)
-                    
+
             elif distort_component == 2:
                 startposition2 += random.randint(0, JUMPY2)
                 if startposition2 > (genelimit2 - 1):
                     startposition2 -= random.randint(0, JUMPY2)
 
             elif distort_component == 3:
-                endposition2 += random.randint(0,JUMPY2)
+                endposition2 += random.randint(0, JUMPY2)
                 if endposition2 > (genelimit2 - 1):
                     endposition2 -= random.randint(0, JUMPY2)
 
@@ -207,38 +187,32 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
                 endposition1 -= random.randint(0, JUMPY1)
                 if endposition1 < 0:
                     endposition1 += random.randint(0, JUMPY1)
-                    
+
             elif distort_component == 6:
                 startposition2 -= random.randint(0, JUMPY2)
                 if startposition2 < 0:
                     startposition2 += random.randint(0, JUMPY2)
 
             elif distort_component == 7:
-                endposition2 -= random.randint(0,JUMPY2)
+                endposition2 -= random.randint(0, JUMPY2)
                 if endposition2 < 0:
                     endposition2 += random.randint(0, JUMPY2)
 
-                    
             if startposition1 > endposition1:
-                tempswap = startposition1
-                startposition1 = endposition1
-                endposition1 = tempswap
-                #startposition1 = endposition1
+                startposition1, endposition1 = endposition1, startposition1
+                # startposition1 = endposition1
 
             if startposition2 > endposition2:
-                tempswap = startposition2
-                startposition2 = endposition2
-                endposition2 = tempswap
-                #startposition2 = endposition2
+                startposition2, endposition2 = endposition2, startposition2
+                # startposition2 = endposition2
 
-            newgene.append((startposition1, endposition1, startposition2, endposition2))
+            newgene.append((startposition1, endposition1,
+                           startposition2, endposition2))
         else:
-            if which_parent < 1:
-                parentseg = gene1[genecount]
-            else:
-                parentseg = gene2[genecount]
+            parentseg = gene1[genecount] if which_parent < 1 else gene2[genecount]
             newgene.append(parentseg)
     return newgene
+
 
 def population(gen, size, mutrate, text1, text2, dictpass):
     """thread worker function"""
@@ -248,7 +222,7 @@ def population(gen, size, mutrate, text1, text2, dictpass):
     # the correct witnesses.
     print("text1: " + text1)
     print("text2: " + text2)
-    #print("dictionary: " + dictloc)
+    # print("dictionary: " + dictloc)
 
     # create a shortened name from the full pathname of each text
     text1short = os.path.splitext(os.path.basename(text1))[0]
@@ -275,7 +249,8 @@ def population(gen, size, mutrate, text1, text2, dictpass):
     fstartdisplay = start.strftime(displayformat)
 
     print("started " + friendlyname + " at " + str(fstartdisplay))
-    print("comparing performance of " + str(maxagents) + " agents for " + str(maxgen) + " generations" + " on " + str(numcores) + " threads")
+    print("comparing performance of " + str(maxagents) + " agents for " +
+          str(maxgen) + " generations" + " on " + str(numcores) + " threads")
 
     with open(text1) as j1:
         jread1 = j1.read()
@@ -307,7 +282,7 @@ def population(gen, size, mutrate, text1, text2, dictpass):
         sortedglob = sorted(glob.glob(globmatch), reverse=True)
 
         if sortedglob:
-            seedfile1 = sortedglob[0] # most recent pop has agents
+            seedfile1 = sortedglob[0]  # most recent pop has agents
             print("gene file:" + str(seedfile1))
 
             # seed a new generation from the retrieved file
@@ -352,8 +327,8 @@ def population(gen, size, mutrate, text1, text2, dictpass):
     if genesize2 < mingenesize:
         genesize2 = mingenesize
 
-    #genesize1 = int(20)
-    #genesize2 = int(20)
+    # genesize1 = int(20)
+    # genesize2 = int(20)
 
     # determine which of two potential gene sizes is smaller
     # and use the smaller one
@@ -368,31 +343,35 @@ def population(gen, size, mutrate, text1, text2, dictpass):
     print("mutation: " + str(mutation))
 
     ########################
+    gene = []
+    sordid = []
 
-    for generation in range(0, maxgen):
-        gene = []
-
+    for generation in range(maxgen):
         # if a winner does not exist, generate a gene from scratch
         if not winner1:
-            for x in range(0,maxagents):
+            for x in range(maxagents):
                 nothing = []
-                gene.append(genegen(nothing, nothing, mutation, genelimit1, genelimit2, genesize))
+                gene.append(genegen(nothing, nothing, mutation,
+                            genelimit1, genelimit2, genesize))
 
         # otherwise combine 2 parents with mutation
         # this process is essentially the same as sexual reproduction
         else:
-            for x in range(0,maxagents):
-                gene.append(genegen(winner1, winner2, mutation, genelimit1, genelimit2, genesize))
+            for x in range(maxagents):
+                gene.append(genegen(winner1, winner2, mutation,
+                            genelimit1, genelimit2, genesize))
 
         # Now we send each gene to an individual agent
         # Initialize each agent as a separate process
         with multiprocessing.Pool(processes=numcores) as pool:
-            args = [(text1,text2, gene[x], dictpass,) for x in range(0,maxagents)]
+            args = [(text1, text2, gene[x], dictpass,)
+                    for x in range(maxagents)]
             results = pool.starmap(agent, args)
         # agents have now completed execution at this point
 
         # determine winning agent by sorting on return scores
-        sordid = sorted(range(len(results)), key=results.__getitem__, reverse=True)
+        sordid = sorted(range(len(results)),
+                        key=results.__getitem__, reverse=True)
 
         # store the top two winners for the next iteration
         winnerdex1 = sordid[0]
@@ -406,7 +385,8 @@ def population(gen, size, mutrate, text1, text2, dictpass):
 
         # retrieve the current time
         now = datetime.datetime.now().strftime(displayformat)
-        print(now + ": generation " + str(generation) + " winner is agent " + str(winnerdex1) + " with score " + str(winnerscore1) + ", winner2 is agent " + str(winnerdex2) + " with score " + str(winnerscore2))
+        print(now + ": generation " + str(generation) + " winner is agent " + str(winnerdex1) + " with score " +
+              str(winnerscore1) + ", winner2 is agent " + str(winnerdex2) + " with score " + str(winnerscore2))
 
     # inform the user that the complete run has ended
     print(friendlyname + " completed " + str(maxgen) + " generations")
@@ -417,15 +397,14 @@ def population(gen, size, mutrate, text1, text2, dictpass):
 
     outputgene = os.path.join(genedir, nowname)
 
-    #actually write out the file to /genes
+    # actually write out the file to /genes
     f = open(outputgene, "w")
-    for x in range(0, maxagents):
+    for x in range(maxagents):
         for item in gene[sordid[x]]:
             for subitem in item:
                 f.write(str(subitem) + " ")
         f.write("\n")
     f.close()
-
 
     # create csv output dir if does not exist
     if not os.path.exists(csvdir):
@@ -437,11 +416,12 @@ def population(gen, size, mutrate, text1, text2, dictpass):
 
     # actually write out the file to output directory
     with open(outputcsv, 'w', newline='') as newcsv:
-        outputwriter = csv.writer(newcsv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        outputwriter = csv.writer(
+            newcsv, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         # save only the winner to prevent giant csv files --
         # these files are used only for human checks of the alignments,
         # as the full data are contained in the genes themselves
-        for x in range(0, 1):
+        for x in range(1):
             for item in gene[sordid[x]]:
                 row = []
                 row.append(jread1[item[0]:item[1]])
@@ -458,9 +438,11 @@ def population(gen, size, mutrate, text1, text2, dictpass):
     totaltime = finish - start
 
     ####
-    print(friendlyname + " ran from " + str(fstartdisplay) + " to " + str(ffinishdisplay))
+    print(friendlyname + " ran from " +
+          str(fstartdisplay) + " to " + str(ffinishdisplay))
     print(friendlyname + " execution time: " + str(totaltime))
     return
+
 
 if __name__ == '__main__':
     population(maxgen, maxagents, mutrate, text1, text2, dictpass)
