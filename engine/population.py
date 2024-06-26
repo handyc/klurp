@@ -24,10 +24,12 @@ import csv
 from agent import agent
 
 #genestring="/home/handyca/data/bls/genes"
-genestring="/Users/handyc/data/bls/genes"
+#genestring="/Users/handyc/data/bls/genes"
+genestring="/home/handyc/data/bls/genes"
 
 #outputstring="/home/handyca/data/bls/output/csv"
-outputstring="/Users/handyc/data/bls/output/csv"
+#outputstring="/Users/handyc/data/bls/output/csv"
+outputstring="/home/handyc/data/bls/output/csv"
 
 # the name of this subprogram
 friendlyname = "population manager"
@@ -62,7 +64,8 @@ maxgen = int(sys.argv[1])
 maxagents = int(sys.argv[2])
 
 # mutation rate
-mutrate = int(sys.argv[3])
+#mutrate = int(sys.argv[3])
+mutrate = float(sys.argv[3])
 
 # need at least 2 agents for combination
 # so set to 2 if we don't have enough
@@ -89,6 +92,7 @@ klurp = os.path.dirname(engine)
 def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
     newgene = []
 
+    random.seed()
     #alignmentsize1 = 400
     alignmentsize1 = 100
     alignmentsize2 = 400
@@ -114,7 +118,7 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
     JUMPY2 = int(alignmentsize2/2)
     sexual = 1
     # above flag will be set to 0 if we must create a new gene
-    
+
     # if gene1 does not exist, then we must create a gene from scratch
     if not gene1:
         for genecount in range(0, genesize):
@@ -158,7 +162,8 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
     for genecount in range(0,genesize):
 
         # generate a random number to see if mutation should occur
-        mutation_roll = random.randint(0, 100)
+        #mutation_roll = random.randint(0, 100)
+        mutation_roll = random.randint(0, 10000)
 
         # randomly select a parent
         which_parent = random.randint(0,sexual)
@@ -166,7 +171,7 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
         # if mutation occurs, then implement the mutation
         # This section is a bit messy and could be further optimized,
         # but it works as a proof of concept.
-        if (mutation_roll < mutrate):
+        if (mutation_roll < int(mutrate*100)):
             if (which_parent < 1):
                 startposition1 = gene1[genecount][0]
                 endposition1 = gene1[genecount][1]
@@ -188,7 +193,7 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
                 endposition1 += random.randint(0, JUMPY1)
                 if endposition1 > (genelimit1 - 1):
                     endposition1 -= random.randint(0, JUMPY1)
-                    
+
             elif distort_component == 2:
                 startposition2 += random.randint(0, JUMPY2)
                 if startposition2 > (genelimit2 - 1):
@@ -208,7 +213,7 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
                 endposition1 -= random.randint(0, JUMPY1)
                 if endposition1 < 0:
                     endposition1 += random.randint(0, JUMPY1)
-                    
+
             elif distort_component == 6:
                 startposition2 -= random.randint(0, JUMPY2)
                 if startposition2 < 0:
@@ -219,7 +224,7 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
                 if endposition2 < 0:
                     endposition2 += random.randint(0, JUMPY2)
 
-                    
+
             if startposition1 > endposition1:
                 tempswap = startposition1
                 startposition1 = endposition1
@@ -326,6 +331,9 @@ def population(gen, size, mutrate, text1, text2, dictpass):
                 list1 = places[0].strip().split(" ")
                 list2 = places[1].strip().split(" ")
 
+                print(list1)
+                print(list2)
+
                 # alignments have 4 components:
                 # begin/end of text 1 fragment, begin/end of text 2 fragment
                 for a, b, c, d in zip(*[iter(list1)]*4):
@@ -372,6 +380,8 @@ def population(gen, size, mutrate, text1, text2, dictpass):
 
     for generation in range(0, maxgen):
         gene = []
+
+
 
         # if a winner does not exist, generate a gene from scratch
         if not winner1:
