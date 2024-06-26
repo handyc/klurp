@@ -19,17 +19,18 @@ import sys
 import random
 
 import multiprocessing
+import hashlib
 
 import csv
 from agent import agent
 
 #genestring="/home/handyca/data/bls/genes"
-#genestring="/Users/handyc/data/bls/genes"
-genestring="/home/handyc/data/bls/genes"
+genestring="/Users/handyc/data/bls/genes"
+#genestring="/home/handyc/data/bls/genes"
 
 #outputstring="/home/handyca/data/bls/output/csv"
-#outputstring="/Users/handyc/data/bls/output/csv"
-outputstring="/home/handyc/data/bls/output/csv"
+outputstring="/Users/handyc/data/bls/output/csv"
+#outputstring="/home/handyc/data/bls/output/csv"
 
 # the name of this subprogram
 friendlyname = "population manager"
@@ -163,7 +164,8 @@ def genegen(gene1, gene2, mutrate, genelimit1, genelimit2, genesize):
 
         # generate a random number to see if mutation should occur
         #mutation_roll = random.randint(0, 100)
-        mutation_roll = random.randint(0, 10000)
+        #mutation_roll = random.randint(0, 10000)
+        mutation_roll = random.randint(0, 9999)
 
         # randomly select a parent
         which_parent = random.randint(0,sexual)
@@ -252,8 +254,10 @@ def population(gen, size, mutrate, text1, text2, dictpass):
     # inform the user about which texts are being used
     # This is mainly just a check to determine that we have located
     # the correct witnesses.
-    print("text1: " + text1)
-    print("text2: " + text2)
+
+    #print("text1: " + text1)
+    #print("text2: " + text2)
+
     #print("dictionary: " + dictloc)
 
     # create a shortened name from the full pathname of each text
@@ -291,8 +295,10 @@ def population(gen, size, mutrate, text1, text2, dictpass):
         jread2 = j2.read()
         numchars2 = len(jread2)
 
-    print("text1 length: " + str(numchars1))
-    print("text2 length: " + str(numchars2))
+    #print("text1: length: " + str(numchars1))
+    #print("text2 length: " + str(numchars2))
+    print("text1 (" + str(numchars1) + "): " + text1)
+    print("text2 (" + str(numchars2) + "): " + text2)
 
     #####
 
@@ -322,6 +328,7 @@ def population(gen, size, mutrate, text1, text2, dictpass):
             places = []
             list1 = []
             list2 = []
+
             with open(seedgeneration, 'r') as seedf:
                 for line in seedf:
                     # remove linebreak which is the last character of the string
@@ -331,8 +338,19 @@ def population(gen, size, mutrate, text1, text2, dictpass):
                 list1 = places[0].strip().split(" ")
                 list2 = places[1].strip().split(" ")
 
-                print(list1)
-                print(list2)
+                #print(list1)
+                #print(list2)
+
+                #print("hi")
+                h1 = hashlib.new('sha256')
+                h2 = hashlib.new('sha256')
+                h1.update(places[0].encode("utf-8"))
+                h2.update(places[1].encode("utf-8"))
+                out1=h1.hexdigest()
+                out2=h2.hexdigest()
+                print("parent1 (hash):" + out1)
+                print("parent2 (hash):" + out2)
+
 
                 # alignments have 4 components:
                 # begin/end of text 1 fragment, begin/end of text 2 fragment
@@ -421,7 +439,8 @@ def population(gen, size, mutrate, text1, text2, dictpass):
         print(now + ": gen. " + str(generation) + " w1: " + str(winnerdex1) + ", s: " + str(winnerscore1) + ", w2: " + str(winnerdex2) + ", s: " + str(winnerscore2))
 
     # inform the user that the complete run has ended
-    print(friendlyname + " completed " + str(maxgen) + " generations")
+    #print(friendlyname + " completed " + str(maxgen) + " generations")
+    print(str(maxgen) + " generations -- ", end="")
 
     # generate a timestamped filename for the gene output
     nowname = str(fstart) + ".txt"
@@ -470,7 +489,7 @@ def population(gen, size, mutrate, text1, text2, dictpass):
     totaltime = finish - start
 
     ####
-    print(friendlyname + " ran from " + str(fstartdisplay) + " to " + str(ffinishdisplay))
+    print(friendlyname + " ran " + str(fstartdisplay) + " to " + str(ffinishdisplay))
     print(friendlyname + " execution time: " + str(totaltime))
     return
 
