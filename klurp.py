@@ -81,8 +81,8 @@ fulltext2 = os.path.join("/", text2loc)
 argument_count=len(sys.argv)
 
 # a friendly greeting with information about start time
-print("Welcome to " + friendlyname + ", " + user + "!")
-print(friendlyname + " start: " + str(start_string))
+print("Welcome to " + friendlyname + ", " + user + "! Started at " + str(start_string))
+#print(friendlyname + " start: " + str(start_string))
 
 # collapse arguments to single string
 # There is a reason for using this method instead of a more
@@ -154,9 +154,9 @@ fullcommand = fullcommand.strip()
 
 # inform user of fuzzy match for witness input
 #print(collapsed + " --->")
-print(arg1)
-print(arg2)
-print("")
+#print(arg1)
+#print(arg2)
+#print("")
 
 # invoke the population manager --
 # there is a reason I used this hacky style to invoke the population manager,
@@ -174,7 +174,7 @@ end_string = end_time.strftime(timeformat)
 total_time = end_time - start_time
 
 # inform user of start, end and total execution time
-print("")
+#print("")
 print(friendlyname + " start: " + str(start_string) + " end: " + str(end_string))
 print(friendlyname + " total processing time: " + str(total_time))
 
