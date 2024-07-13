@@ -261,8 +261,7 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
 
 #
 
-Look for my article soon in BLS 9!
-https://www.law.buffalo.edu/beyond/journals/buddhism.html
+Article coming soon.
 
 #
 
