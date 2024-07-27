@@ -190,9 +190,7 @@ Klurp is undergoing major changes right now as we continue to process new materi
 - Documentation is being improved.
 - new engine tests
 - new tutorials
-- article on proof of concept coming soon
-
-A new release for Klurp is planned for October 2023.
+- article on proof of concept coming soon....
 
 ![i](https://openphilology.eu/media/pages/news/524279882-1558970201/newsdatech2019.05.png)
 
