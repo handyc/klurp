@@ -259,7 +259,10 @@ will soon move them to a [separate repository](https://github.com/handyc/dhtools
 
 #
 
-Article coming soon.
+Honestly this entire project is probably obsolete now due to the
+incredible advances with LLM stuff the last few years. If you just
+want to get a project done, you are probably wasting your time looking
+in here -- this engine is pretty slow and not very practical.
 
 #
 
